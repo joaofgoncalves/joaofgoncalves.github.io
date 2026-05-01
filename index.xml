@@ -11,6 +11,124 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>SegOptim</title>
+      <link>http://joaogoncalves.cc/software/segoptim/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/software/segoptim/</guid>
+      <description>
+
+&lt;h2 id=&#34;segoptim&#34;&gt;SegOptim&lt;/h2&gt;
+
+&lt;p&gt;SegOptim is an R package for object-based image analysis (OBIA). It allows to run, compare and optimize multiple image segmentation algorithms in the context of supervised classification. It also allows to perform unsupervised classification with several different methods and compare them through internal clustering metrics.&lt;/p&gt;
+
+&lt;p&gt;For more details about installation and how to use the package go to the tutorial &lt;a href=&#34;https://segoptim.bitbucket.io/docs/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Check also the paper describing the package functionalities &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0303243418303556&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;functionalities&#34;&gt;Functionalities&lt;/h3&gt;
+
+&lt;p&gt;Currently the package offers several functionalities, namely:
+- Run different image segmentation algorithms;
+- Populate image segments with aggregate statistics (using pre- and/or user-defined functions);
+- Perform object-based supervised classification with several different methods;
+- Evaluate classification performance for single- or multi-class problems;
+- Optimize image segmentation parameters using Genetic Algorithms (GA) and other methods;
+- Compare different algorithms based on optimized solutions;
+- Perform unsupervised classification with several methods and compare the results using internal clustering criteria.&lt;/p&gt;
+
+&lt;h3 id=&#34;algorithms-supported&#34;&gt;Algorithms Supported&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Image segmentation algorithms:&lt;/strong&gt;
+- ArcGIS Mean-shift
+- GRASS GIS Region Growing
+- Orfeo ToolBox (OTB) Large-scale Mean-shift
+- RSGISLib Shepherd&amp;rsquo;s k-means
+- SAGA GIS Seeded Region Growing
+- TerraLib 5 Baatz-Schape Multi-resolution segmentation and Mean Region Growing&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Supervised classification algorithms:&lt;/strong&gt;
+- Flexible Discriminant Analysis (FDA)
+- Generalized Boosted Model (GBM)
+- K-nearest neighbor classifier (KNN)
+- Random Forest (RF)
+- Support Vector Machines (SVM)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Unsupervised classification algorithms:&lt;/strong&gt;
+- CLARA (Clustering LARge Applications)
+- Hard competitive learning algorithm
+- K-means
+- Neural gas algorithm&lt;/p&gt;
+
+&lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/SegOptim&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/SegOptim&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ThermalRaster</title>
+      <link>http://joaogoncalves.cc/software/thermalraster/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/software/thermalraster/</guid>
+      <description>
+
+&lt;h2 id=&#34;thermalraster&#34;&gt;ThermalRaster&lt;/h2&gt;
+
+&lt;p&gt;ThermalRaster is an R package designed to enhance the processing and analysis of FLIR thermal and RGB images. It offers a comprehensive suite of functions for extracting, processing, and visualizing thermal data embedded within the metadata of FLIR images. Key features also include retrieving full and cropped RGB images. Imagery is returned as &lt;code&gt;SpatRaster&lt;/code&gt; objects compatible with the &lt;code&gt;terra&lt;/code&gt; package, enabling users to profit from this package&amp;rsquo;s features/toolkit.&lt;/p&gt;
+
+&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Handling RGB and Thermal Imagery&lt;/strong&gt;: Extracts thermal data and RGB imagery from FLIR camera outputs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Generating Synthetic or Predicted Thermal Images&lt;/strong&gt;: Using the overlap between low-resolution thermal imagery with high-resolution RGB images, the package enables the creation of synthetic or predicted thermal images for either cropped or full RGB images. This is achieved through the application of the Random Forest algorithm (via the &lt;code&gt;ranger&lt;/code&gt; package) or Deep Learning methodologies (utilizing &lt;code&gt;keras&lt;/code&gt;/&lt;code&gt;tensorflow&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Working with Regions-of-Interest (ROIs)&lt;/strong&gt;: The package enables the handling of JSON annotations/masks from Roboflow, enabling the extraction of ROIs from the images for further analysis, making it possible to assess, plot, analyze and model fine-scale thermal variation in micro-habitats. ROIs can also be generated with the &lt;code&gt;terra&lt;/code&gt; package as &lt;code&gt;SpatVector&lt;/code&gt; objects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/ThermalRaster&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/ThermalRaster&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rsegm</title>
+      <link>http://joaogoncalves.cc/software/rsegm/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/software/rsegm/</guid>
+      <description>
+
+&lt;h2 id=&#34;rsegm&#34;&gt;rsegm&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;rsegm&lt;/code&gt; package provides scalable, high-performance tools for geospatial image segmentation built on top of &lt;code&gt;terra&lt;/code&gt;, &lt;code&gt;Rcpp&lt;/code&gt;, and modern block-wise / tiled processing strategies. It is designed for object-based image analysis (OBIA) workflows on large raster datasets, including satellite and aerial imagery. The core focus is on producing spatially coherent, integer-labeled segment rasters that integrate cleanly with downstream raster and vector analysis in R.&lt;/p&gt;
+
+&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Graph-based and hybrid segmentation algorithms&lt;/strong&gt;: Includes Fast Felzenszwalb-Huttenlocher (FH) graph-based segmentation, Hybrid FH + region-level Mean Shift segmentation, Baatz-Schäpe multi-resolution, Fast Baatz-Schäpe multi-resolution, and SEEDS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Large-raster support&lt;/strong&gt;: Robust tiled processing for rasters that do not fit comfortably in memory, and seam-aware merging to avoid boundary artifacts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Efficient C++ backends&lt;/strong&gt;: Computationally intensive steps implemented in Rcpp for speed and scalability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;terra-native design&lt;/strong&gt;: Uses &lt;code&gt;SpatRaster&lt;/code&gt; throughout and produces standard GeoTIFF outputs with integer segment IDs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;segmentation-methods&#34;&gt;Segmentation Methods&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;FH graph-based segmentation&lt;/strong&gt;: A fast, noise-robust method often used to generate superpixels or initial regions, suitable for large multi-band rasters.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FH + mean shift hybrid segmentation&lt;/strong&gt;: A two-stage approach combining FH over-segmentation with region-level Mean Shift refinement to merge spectrally similar regions efficiently.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mean Shift segmentation&lt;/strong&gt;: A pixel-domain mean-shift filtering and clustering method that produces smooth, spectrally homogeneous segments.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Baatz–Schäpe multiresolution segmentation&lt;/strong&gt;: A classical OBIA algorithm that iteratively merges adjacent regions based on spectral heterogeneity and shape criteria.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fast Baatz–Schäpe multiresolution segmentation&lt;/strong&gt;: An optimized variant of the Baatz–Schäpe algorithm using efficient region bookkeeping and priority-queue merging.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SEEDS superpixel segmentation&lt;/strong&gt;: A hierarchical, histogram-based superpixel method that starts from a regular grid and refines boundaries via local block moves.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/rsegm&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/rsegm&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Improving the detection of wildfire disturbances in space and time based on indicators extracted from MODIS data: a case study in northern Portugal</title>
       <link>http://joaogoncalves.cc/publication/2019_01_marcos_et_al_improving_detection_wildfire_disturbances_modis/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
@@ -160,43 +278,6 @@ So to help with this I decided to create a minimal list with different types of 
       
       <guid>http://joaogoncalves.cc/publication/2017_02_graca_et_al_assessing_mismatches_ecosystem_services_porto/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Estimating Invasion Success by Non-Native Trees in a National Park Combining WorldView-2 Very High Resolution Satellite Data and Species Distribution Models</title>
-      <link>http://joaogoncalves.cc/publication/2017_01_monteiro_et_al_estimating_invasion_success_wv2/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/publication/2017_01_monteiro_et_al_estimating_invasion_success_wv2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A model-based framework for assessing the vulnerability of low dispersal vertebrates to landscape fragmentation under environmental change</title>
-      <link>http://joaogoncalves.cc/publication/2016_12_goncalves_et_al_model-based_framework_vertebrates_vulnerability/</link>
-      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/publication/2016_12_goncalves_et_al_model-based_framework_vertebrates_vulnerability/</guid>
-      <description>
-
-&lt;h3 id=&#34;full-abstract&#34;&gt;Full abstract&lt;/h3&gt;
-
-&lt;p&gt;Environmental changes are driving rapid geographic shifts of suitable environmental conditions for species. These might survive by tracking those shifts, however successful responses will depend on the spatial distribution of suitable habitats (current and future) and on their connectivity. Most herptiles (i.e., amphibians and reptiles) have low dispersal abilities, and therefore herptiles are among the most vulnerable groups to environmental changes. Here we assessed the vulnerability of herptile species to future climate and land use changes in fragmented landscapes. We developed and tested a methodological approach combining the strengths of Species Distribution Models (SDMs) and of functional connectivity analysis. First, using SDMs we forecasted current and future distributions of potential suitable areas as well as range dynamics for four herptile species in Portugal. SDM forecasts for 2050 were obtained under two contrasting emission scenarios, translated into moderate (low-emissions scenario) or large (high-emissions scenario) changes in climate and land use conditions. Then, we calculated and analysed functional connectivity from areas projected to lose environmental suitability towards areas keeping suitable conditions. Landscape matrix resistance and barrier effects of the national motorway network were incorporated as the main sources of fragmentation. Potential suitable area was projected to decrease under future conditions for most test species, with the high-emissions scenario amplifying the losses or gains. Spatiotemporal patterns of connectivity between potentially suitable areas signalled the most important locations for maintaining linkages and migration corridors, as well as potential conflicts due to overlaps with the current motorway network. By integrating SDM projections with functional connectivity analysis, we were able to assess and map the vulnerability of distinct herptile species to isolation or extinction under environmental change scenarios. Our framework provides valuable information, with fairly low data requirements, for optimizing biodiversity management and mitigation efforts, aiming to reduce the complex and often synergistic negative impacts of multiple environmental change drivers. Implications for conservation planning and management are discussed from a global change adaptation perspective.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exploring the spatiotemporal dynamics of habitat suitability to improve conservation management of a vulnerable plant species</title>
-      <link>http://joaogoncalves.cc/publication/2016_09_goncalves_et_al_exploring-spatiotemporal-dynamics-veronica-micrantha/</link>
-      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/publication/2016_09_goncalves_et_al_exploring-spatiotemporal-dynamics-veronica-micrantha/</guid>
-      <description>
-
-&lt;h3 id=&#34;full-abstract&#34;&gt;Full abstract&lt;/h3&gt;
-
-&lt;p&gt;Ongoing declines in biodiversity caused by global environmental changes call for adaptive conservation management, including the assessment of habitat suitability spatiotemporal dynamics potentially affecting species persistence. Remote sensing (RS) provides a wide-range of satellite-based environmental variables that can be fed into species distribution models (SDMs) to investigate species-environment relations and forecast responses to change. We address the spatiotemporal dynamics of species’ habitat suitability at the landscape level by combining multi-temporal RS data with SDMs for analysing inter-annual habitat suitability dynamics. We implemented this framework with a vulnerable plant species (Veronica micrantha), by combining SDMs with a time-series of RS-based metrics of vegetation functioning related to primary productivity, seasonality, phenology and actual evapotranspiration. Besides RS variables, predictors related to landscape structure, soils and wildfires were ranked and combined through multi-model inference (MMI). To assess recent dynamics, a habitat suitability time-series was generated through model hindcasting. MMI highlighted the strong predictive ability of RS variables related to primary productivity and water availability for explaining the test-species distribution, along with soil, wildfire regime and landscape composition. The habitat suitability time-series revealed the effects of short-term land cover changes and inter-annual variability in climatic conditions. Multi-temporal SDMs further improved predictions, benefiting from RS time-series. Overall, results emphasize the integration of landscape attributes related to function, composition and spatial configuration for improving the explanation of ecological patterns. Moreover, coupling SDMs with RS functional metrics may provide early-warnings of future environmental changes potentially impacting habitat suitability. Applications discussed include the improvement of biodiversity monitoring and conservation strategies.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

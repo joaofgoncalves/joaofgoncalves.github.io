@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thermal Imaging on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/tags/thermal-imaging/</link>
+    <description>Recent content in Thermal Imaging on João Gonçalves</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2026</copyright>
+    <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://joaogoncalves.cc/tags/thermal-imaging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ThermalRaster</title>
+      <link>http://joaogoncalves.cc/software/thermalraster/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/software/thermalraster/</guid>
+      <description>ThermalRaster ThermalRaster is an R package designed to enhance the processing and analysis of FLIR thermal and RGB images. It offers a comprehensive suite of functions for extracting, processing, and visualizing thermal data embedded within the metadata of FLIR images. Key features also include retrieving full and cropped RGB images. Imagery is returned as SpatRaster objects compatible with the terra package, enabling users to profit from this package&amp;rsquo;s features/toolkit.</description>
+    </item>
+    
+  </channel>
+</rss>

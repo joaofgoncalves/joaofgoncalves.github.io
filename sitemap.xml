@@ -5,6 +5,33 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/software/segoptim/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/software/thermalraster/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/software/rsegm/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/publication/2019_01_marcos_et_al_improving_detection_wildfire_disturbances_modis/</loc>
       <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     </url>
@@ -268,8 +295,38 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/tags/geospatial/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/</loc>
       <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/machine-learning/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/object-based-image-analysis/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -288,8 +345,38 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/tags/r/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/software/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/tags/</loc>
       <lastmod>2017-02-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/thermal-imaging/</loc>
+      <lastmod>2024-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
