@@ -48,6 +48,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+  
   
   
   
@@ -86,9 +88,6 @@
   <link rel="canonical" href="http://joaogoncalves.cc/">
 
   <meta property="twitter:card" content="summary_large_image">
-  
-  <meta property="twitter:site" content="@grey_noise">
-  <meta property="twitter:creator" content="@grey_noise">
   
   <meta property="og:site_name" content="João Gonçalves">
   <meta property="og:url" content="http://joaogoncalves.cc/">
@@ -255,14 +254,20 @@
 
         
         <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="http://inbio-la.pt/research" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">InBIO - Research Network in Biodiversity and Evolutionary Biology</span>
+          <a href="https://biopolis.pt/en/" target="_blank" itemprop="url" rel="noopener">
+          <span itemprop="name">BIOPOLIS – Program in Genomics, Biodiversity and Land Planning</span>
           </a>
         </h3>
         
         <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
           <a href="https://cibio.up.pt/" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">CIBIO - Research Center in Biodiversity and Genetic Resources</span>
+          <span itemprop="name">CIBIO – Research Center in Biodiversity and Genetic Resources</span>
+          </a>
+        </h3>
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="http://inbio-la.pt/" target="_blank" itemprop="url" rel="noopener">
+          <span itemprop="name">InBIO – Research Network in Biodiversity and Evolutionary Biology</span>
           </a>
         </h3>
         
@@ -276,13 +281,6 @@
         <li>
           <a itemprop="sameAs" href="mailto:joaofgo@gmail.com" target="_blank" rel="noopener">
             <i class="fa fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a itemprop="sameAs" href="//twitter.com/grey_noise" target="_blank" rel="noopener">
-            <i class="fa fa-twitter big-icon"></i>
           </a>
         </li>
         
@@ -1487,11 +1485,6 @@ I am broad spectrum ecologist working on integrative approaches to investigate a
       
 
       
-      <li>
-        <i class="fa-li fa fa-skype fa-2x" aria-hidden="true"></i>
-        <span><a href="skype:joaofgo@hotmail.com?call">joaofgo@hotmail.com</a></span>
-      </li>
-      
 
       
 
@@ -1513,12 +1506,12 @@ I am broad spectrum ecologist working on integrative approaches to investigate a
 
     
     <div class="hidden">
-      <input id="map-provider" value="1">
+      <input id="map-provider" value="3">
       <input id="map-lat" value="41.328170">
       <input id="map-lng" value="-8.672827">
       <input id="map-dir" value="CIBIO - Research Center in Biodiversity and Genetic Resources, Campus Agrário de Vairão, R. Padre Armando Quintas, nr 7 - 4485-661 Vairão, V. Conde, Portugal">
       <input id="map-zoom" value="15">
-      <input id="map-api-key" value="AIzaSyDyqWNbPrfOJAg518g0PCxT_ArEXsQf2ac">
+      <input id="map-api-key" value="">
     </div>
     <div id="map"></div>
     
@@ -1539,7 +1532,7 @@ I am broad spectrum ecologist working on integrative approaches to investigate a
 
     <p class="powered-by">
 
-      &copy; 2018 &middot; 
+      &copy; 2026 &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1589,8 +1582,6 @@ I am broad spectrum ecologist working on integrative approaches to investigate a
     
 
     
-    <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyDyqWNbPrfOJAg518g0PCxT_ArEXsQf2ac"></script>
-    
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
@@ -1599,7 +1590,7 @@ I am broad spectrum ecologist working on integrative approaches to investigate a
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
     
     <script src="/js/hugo-academic.js"></script>
