@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2026</copyright>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="http://joaogoncalves.cc/tags/bioclimatic/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CHELSA Future Climate Predictors for SDMs - OneSTOP Task 5.1</title>
+      <link>http://joaogoncalves.cc/datasets/chelsa-onestop-future-scenarios/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/datasets/chelsa-onestop-future-scenarios/</guid>
+      <description>This entry groups the six future CHELSA climate-scenario datasets prepared for Species Distribution Model (SDM) projections within the OneSTOP Project (Task 5.1). The datasets provide high-resolution (~1 km) bioclimatic and environmental predictor variables derived from the CHELSA v2.1 BIOCLIM+ dataset, which is based on downscaled and bias-corrected climate data.
+For each future period and SSP/RCP scenario, CHELSA v2.1 climate layers were obtained for the five available CMIP6 Global Circulation Models (GCMs): GFDL-ESM4, UKESM1-0-LL, MPI-ESM1-2-HR, IPSL-CM6A-LR, and MRI-ESM2-0.</description>
+    </item>
     
     <item>
       <title>CHELSA Bioclimatic &amp; Environmental Predictors for SDMs — OneSTOP Baseline (1981–2010)</title>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CHELSA on João Gonçalves</title>
-    <link>http://joaogoncalves.cc/tags/chelsa/</link>
-    <description>Recent content in CHELSA on João Gonçalves</description>
+    <title>CMIP6 on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/tags/cmip6/</link>
+    <description>Recent content in CMIP6 on João Gonçalves</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2026</copyright>
     <lastBuildDate>Sat, 02 May 2026 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="http://joaogoncalves.cc/tags/chelsa/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://joaogoncalves.cc/tags/cmip6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>http://joaogoncalves.cc/datasets/chelsa-onestop-future-scenarios/</guid>
       <description>This entry groups the six future CHELSA climate-scenario datasets prepared for Species Distribution Model (SDM) projections within the OneSTOP Project (Task 5.1). The datasets provide high-resolution (~1 km) bioclimatic and environmental predictor variables derived from the CHELSA v2.1 BIOCLIM+ dataset, which is based on downscaled and bias-corrected climate data.
 For each future period and SSP/RCP scenario, CHELSA v2.1 climate layers were obtained for the five available CMIP6 Global Circulation Models (GCMs): GFDL-ESM4, UKESM1-0-LL, MPI-ESM1-2-HR, IPSL-CM6A-LR, and MRI-ESM2-0.</description>
-    </item>
-    
-    <item>
-      <title>CHELSA Bioclimatic &amp; Environmental Predictors for SDMs — OneSTOP Baseline (1981–2010)</title>
-      <link>http://joaogoncalves.cc/datasets/chelsa-onestop-baseline/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/datasets/chelsa-onestop-baseline/</guid>
-      <description></description>
     </item>
     
   </channel>

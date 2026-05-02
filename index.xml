@@ -157,6 +157,248 @@
     </item>
     
     <item>
+      <title>CHELSA Future Climate Predictors for SDMs - OneSTOP Task 5.1</title>
+      <link>http://joaogoncalves.cc/datasets/chelsa-onestop-future-scenarios/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/datasets/chelsa-onestop-future-scenarios/</guid>
+      <description>
+
+&lt;p&gt;This entry groups the six future CHELSA climate-scenario datasets prepared for Species Distribution Model (SDM) projections within the OneSTOP Project (Task 5.1). The datasets provide high-resolution (~1 km) bioclimatic and environmental predictor variables derived from the CHELSA v2.1 BIOCLIM+ dataset, which is based on downscaled and bias-corrected climate data.&lt;/p&gt;
+
+&lt;p&gt;For each future period and SSP/RCP scenario, CHELSA v2.1 climate layers were obtained for the five available CMIP6 Global Circulation Models (GCMs): GFDL-ESM4, UKESM1-0-LL, MPI-ESM1-2-HR, IPSL-CM6A-LR, and MRI-ESM2-0. The GCM layers were averaged into a single ensemble mean for each time period and scenario to reduce dependence on any individual climate model and provide a robust representation of mid- and late-century climatic conditions for SDMs.&lt;/p&gt;
+
+&lt;p&gt;The ensemble predictors were prepared to be compatible with the land-cover projections of Chen et al. (2022), enabling integration between future climate suitability projections and 1 km plant functional type land-cover scenarios. Raster data were internally scaled and reprojected using bilinear resampling in the terra R package.&lt;/p&gt;
+
+&lt;p&gt;All raster layers are provided as GeoTIFF float files in EPSG:6933, WGS 1984 / NSIDC EASE-Grid 2.0 Global (Cylindrical Equal Area projection). The variables include the standard BIOCLIM temperature and precipitation predictors and additional BIOCLIM+ metrics, including growing-season length, growing-season precipitation, growing-season mean temperature, growing-degree days above 0 °C, 5 °C, and 10 °C, and net primary productivity.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Period&lt;/th&gt;
+&lt;th&gt;Scenario (SSP/RCP)&lt;/th&gt;
+&lt;th&gt;Zenodo record&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2041-2070&lt;/td&gt;
+&lt;td&gt;SSP1/RCP2.6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://zenodo.org/records/17651614&#34; target=&#34;_blank&#34;&gt;17651614&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2041-2070&lt;/td&gt;
+&lt;td&gt;SSP3/RCP7.0&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://zenodo.org/records/17654440&#34; target=&#34;_blank&#34;&gt;17654440&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2041-2070&lt;/td&gt;
+&lt;td&gt;SSP5/RCP8.5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://zenodo.org/records/17654923&#34; target=&#34;_blank&#34;&gt;17654923&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2071-2100&lt;/td&gt;
+&lt;td&gt;SSP1/RCP2.6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://zenodo.org/records/17655051&#34; target=&#34;_blank&#34;&gt;17655051&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2071-2100&lt;/td&gt;
+&lt;td&gt;SSP3/RCP7.0&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://zenodo.org/records/17655228&#34; target=&#34;_blank&#34;&gt;17655228&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2071-2100&lt;/td&gt;
+&lt;td&gt;SSP5/RCP8.5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://zenodo.org/records/17655356&#34; target=&#34;_blank&#34;&gt;17655356&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;These future predictor datasets complement the historical CHELSA baseline used for model training and are intended for assessing climatic suitability and potential species distributions under changing environmental conditions, including OneSTOP analyses of Invasive Alien Species and integration with future land-cover projections.&lt;/p&gt;
+
+&lt;p&gt;Chen, G., Li, X., &amp;amp; Liu, X. (2022). Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios. Scientific Data, 9, 125. &lt;a href=&#34;https://doi.org/10.1038/s41597-022-01208-6&#34; target=&#34;_blank&#34;&gt;https://doi.org/10.1038/s41597-022-01208-6&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;h3 id=&#34;list-of-variables-in-the-dataset&#34;&gt;List of variables in the dataset&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Variable&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BIO1&lt;/td&gt;
+&lt;td&gt;Annual Mean Temperature&lt;/td&gt;
+&lt;td&gt;Mean annual air temperature&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO2&lt;/td&gt;
+&lt;td&gt;Mean Diurnal Range&lt;/td&gt;
+&lt;td&gt;Mean of monthly Tmax - Tmin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO3&lt;/td&gt;
+&lt;td&gt;Isothermality&lt;/td&gt;
+&lt;td&gt;BIO2 / BIO7 x 100&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO4&lt;/td&gt;
+&lt;td&gt;Temperature Seasonality&lt;/td&gt;
+&lt;td&gt;Standard deviation of temperature x 100&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO5&lt;/td&gt;
+&lt;td&gt;Max Temperature of Warmest Month&lt;/td&gt;
+&lt;td&gt;Highest monthly mean temperature&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO6&lt;/td&gt;
+&lt;td&gt;Min Temperature of Coldest Month&lt;/td&gt;
+&lt;td&gt;Lowest monthly mean temperature&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO7&lt;/td&gt;
+&lt;td&gt;Annual Temperature Range&lt;/td&gt;
+&lt;td&gt;BIO5 - BIO6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO8&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Wettest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the wettest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO9&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Driest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the driest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO10&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Warmest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the warmest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO11&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Coldest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the coldest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO12&lt;/td&gt;
+&lt;td&gt;Annual Precipitation&lt;/td&gt;
+&lt;td&gt;Total annual precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO13&lt;/td&gt;
+&lt;td&gt;Precipitation of Wettest Month&lt;/td&gt;
+&lt;td&gt;Highest monthly precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO14&lt;/td&gt;
+&lt;td&gt;Precipitation of Driest Month&lt;/td&gt;
+&lt;td&gt;Lowest monthly precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO15&lt;/td&gt;
+&lt;td&gt;Precipitation Seasonality&lt;/td&gt;
+&lt;td&gt;Coefficient of variation of monthly precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO16&lt;/td&gt;
+&lt;td&gt;Precipitation of Wettest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the wettest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO17&lt;/td&gt;
+&lt;td&gt;Precipitation of Driest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the driest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO18&lt;/td&gt;
+&lt;td&gt;Precipitation of Warmest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the warmest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO19&lt;/td&gt;
+&lt;td&gt;Precipitation of Coldest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the coldest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GDD0&lt;/td&gt;
+&lt;td&gt;Growing Degree Days &amp;gt;0 °C&lt;/td&gt;
+&lt;td&gt;Annual sum of degree-days above 0 °C&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GDD5&lt;/td&gt;
+&lt;td&gt;Growing Degree Days &amp;gt;5 °C&lt;/td&gt;
+&lt;td&gt;Annual sum of degree-days above 5 °C&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GDD10&lt;/td&gt;
+&lt;td&gt;Growing Degree Days &amp;gt;10 °C&lt;/td&gt;
+&lt;td&gt;Annual sum of degree-days above 10 °C&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GSL&lt;/td&gt;
+&lt;td&gt;Growing Season Length&lt;/td&gt;
+&lt;td&gt;Number of days with mean temperature above the growing-season threshold&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GSP&lt;/td&gt;
+&lt;td&gt;Growing Season Precipitation&lt;/td&gt;
+&lt;td&gt;Total precipitation during the growing season&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GST&lt;/td&gt;
+&lt;td&gt;Growing Season Temperature&lt;/td&gt;
+&lt;td&gt;Mean temperature during the growing season&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;NPP&lt;/td&gt;
+&lt;td&gt;Net Primary Productivity&lt;/td&gt;
+&lt;td&gt;Modelled net primary productivity (vegetation biomass production)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Mapping Spatial Patterns and Recent Changes in Quercus pyrenaica (Willd.) Forests Using Remote Sensing and Machine Learning</title>
       <link>http://joaogoncalves.cc/publication/2026_04_passos_et_al_mapping-spatial-patterns-and-recent-changes-in-que/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
@@ -332,32 +574,6 @@
 &lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/SegOptim&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/SegOptim&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ThermalRaster</title>
-      <link>http://joaogoncalves.cc/r-packages/thermalraster/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/r-packages/thermalraster/</guid>
-      <description>
-
-&lt;h2 id=&#34;thermalraster&#34;&gt;ThermalRaster&lt;/h2&gt;
-
-&lt;p&gt;ThermalRaster is an R package designed to enhance the processing and analysis of FLIR thermal and RGB images. It offers a comprehensive suite of functions for extracting, processing, and visualizing thermal data embedded within the metadata of FLIR images. Key features also include retrieving full and cropped RGB images. Imagery is returned as &lt;code&gt;SpatRaster&lt;/code&gt; objects compatible with the &lt;code&gt;terra&lt;/code&gt; package, enabling users to profit from this package&amp;rsquo;s features/toolkit.&lt;/p&gt;
-
-&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Handling RGB and Thermal Imagery&lt;/strong&gt;: Extracts thermal data and RGB imagery from FLIR camera outputs.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Generating Synthetic or Predicted Thermal Images&lt;/strong&gt;: Using the overlap between low-resolution thermal imagery with high-resolution RGB images, the package enables the creation of synthetic or predicted thermal images for either cropped or full RGB images. This is achieved through the application of the Random Forest algorithm (via the &lt;code&gt;ranger&lt;/code&gt; package) or Deep Learning methodologies (utilizing &lt;code&gt;keras&lt;/code&gt;/&lt;code&gt;tensorflow&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Working with Regions-of-Interest (ROIs)&lt;/strong&gt;: The package enables the handling of JSON annotations/masks from Roboflow, enabling the extraction of ROIs from the images for further analysis, making it possible to assess, plot, analyze and model fine-scale thermal variation in micro-habitats. ROIs can also be generated with the &lt;code&gt;terra&lt;/code&gt; package as &lt;code&gt;SpatVector&lt;/code&gt; objects.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/ThermalRaster&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/ThermalRaster&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

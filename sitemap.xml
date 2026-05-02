@@ -32,6 +32,15 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/datasets/chelsa-onestop-future-scenarios/</loc>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/earth-engine-apps/</loc>
       <lastmod>2026-05-02T00:00:00+01:00</lastmod>
     </url>
@@ -918,7 +927,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/bioclimatic/</loc>
-      <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -948,7 +957,17 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/chelsa/</loc>
-      <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/cmip6/</loc>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -967,7 +986,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/climate/</loc>
-      <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -997,7 +1016,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/datasets/</loc>
-      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1107,7 +1126,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/onestop/</loc>
-      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1177,7 +1196,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/ssp-rcp/</loc>
-      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1197,7 +1216,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/species-distribution-models/</loc>
-      <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
