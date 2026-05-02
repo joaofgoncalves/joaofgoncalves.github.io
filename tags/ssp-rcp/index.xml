@@ -28,7 +28,8 @@ For each future period and SSP/RCP scenario, CHELSA v2.1 climate layers were obt
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>http://joaogoncalves.cc/datasets/global-pft-reclassified-onestop/</guid>
-      <description></description>
+      <description>Reclassified Global Land-Cover Plant Functional Type Dataset (1 km) for baseline (2015) and future SSP/RCP scenarios based on Chen et al. (2022, DOI:10.1038/s41597-022-01208-6) — OneSTOP Project Task 5.1 Access to data in Zenodo: https://zenodo.org/records/17655743
+Summary This dataset provides a reclassified global land-cover product derived from the 1-km plant functional type (PFT) projections of Chen et al. (2022, Scientific Data 9:125). The original Chen et al. dataset simulates global land-use and land-cover change from 2015 to 2100 (at 5-year steps) under the CMIP6 SSP–RCP socio-climatic scenarios, using LUH2-constrained land-demand trajectories and the FLUS cellular automata model.</description>
     </item>
     
   </channel>

@@ -446,7 +446,193 @@
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>http://joaogoncalves.cc/datasets/global-pft-reclassified-onestop/</guid>
-      <description></description>
+      <description>
+
+&lt;h2 id=&#34;reclassified-global-land-cover-plant-functional-type-dataset-1-km-for-baseline-2015-and-future-ssp-rcp-scenarios-based-on-chen-et-al-2022-doi-10-1038-s41597-022-01208-6-onestop-project-task-5-1&#34;&gt;Reclassified Global Land-Cover Plant Functional Type Dataset (1 km) for baseline (2015) and future SSP/RCP scenarios based on Chen et al. (2022, DOI:10.1038/s41597-022-01208-6) — OneSTOP Project Task 5.1&lt;/h2&gt;
+
+&lt;p&gt;Access to data in Zenodo: &lt;a href=&#34;https://zenodo.org/records/17655743&#34; target=&#34;_blank&#34;&gt;https://zenodo.org/records/17655743&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;This dataset provides a reclassified global land-cover product derived from the 1-km plant functional type (PFT) projections of Chen et al. (2022, Scientific Data 9:125). The original Chen et al. dataset simulates global land-use and land-cover change from 2015 to 2100 (at 5-year steps) under the CMIP6 SSP–RCP socio-climatic scenarios, using LUH2-constrained land-demand trajectories and the FLUS cellular automata model. It includes 20 climate-relevant PFT classes, designed primarily for climate modelling applications.&lt;/p&gt;
+
+&lt;p&gt;For the OneSTOP Project (Task 5.1), we reclassified these 20 PFT classes into a reduced and ecologically coherent set of 12 land-cover types tailored for species distribution modelling (SDM) and invasive alien species risk assessment. The reclassification aggregates PFTs that share structural vegetation characteristics or similar ecological functions. For example, tropical and temperate broadleaf evergreen trees are grouped into broadleaf evergreen forest, several deciduous tree categories are combined into a broadleaf deciduous forest, the full range of C3/C4 grass PFTs are unified into grasslands, and urban, cropland, barren, water, and permanent snow/ice classes are preserved as distinct categories. This harmonisation produces a land-cover dataset that maintains the spatial detail and scenario-consistent land-change dynamics of Chen et al. (2022), while providing SDM-ready predictors aligned with the CHELSA climate datasets used in OneSTOP Task 5.1.&lt;/p&gt;
+
+&lt;p&gt;The dataset includes a baseline period/year, 2015, used as a starting point for modelling land cover/PFT dynamics and as a reference year for modelling in OneSTOP Task 5.1. The dataset also includes multiple future scenarios (SSP1-2.6, SSP3-7.0, and SSP5-8.5) spanning 2015 to 2100 at 5-year time steps, necessary for developing climate- and land-cover-aware SDMs. Beyond the scenarios available in this reclassified version, the original dataset includes additional SSP scenarios: SSP1-1.9, SSP2-4.5, SSP4-3.4, SSP4-6.0, and SSP5-3.4, not used for modelling in OneSTOP T5.1.&lt;/p&gt;
+
+&lt;p&gt;All outputs are delivered as single-band GeoTIFF rasters (as 8-bit signed integer) at 1-km spatial resolution. The coordinate system is EPSG:6933 - WGS 84 / NSIDC EASE-Grid 2.0 Global, Cylindrical Equal Area Projection. Data preprocessing was entirely done in R using the terra package for handling raster layers. This reclassified dataset offers a simplified yet ecologically meaningful land-cover representation that improves interpretability and computational efficiency in SDM and biodiversity and invasion-risk applications.&lt;/p&gt;
+
+&lt;h3 id=&#34;data-files&#34;&gt;Data files&lt;/h3&gt;
+
+&lt;p&gt;global_PFT_2015_recl.tif - 2015 baseline global land cover/PFT data&lt;/p&gt;
+
+&lt;p&gt;File naming structure allows filtering files, for example: global_PFT_SSP1_RCP26_2100_recl.tif&lt;/p&gt;
+
+&lt;p&gt;scenario SSP1-2.6
+year: 2100
+_recl - indicates the reclassified version distributed here&lt;/p&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;p&gt;Chen, G., Li, X. &amp;amp; Liu, X. Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios. Sci Data 9, 125 (2022). &lt;a href=&#34;https://doi.org/10.1038/s41597-022-01208-6&#34; target=&#34;_blank&#34;&gt;https://doi.org/10.1038/s41597-022-01208-6&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;technical-info-english&#34;&gt;Technical info (English)&lt;/h3&gt;
+
+&lt;p&gt;List of the 20 original land cover/PFT classes and the new 12 classes based on the reclassification scheme proposed for this dataset&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;Original code&lt;/th&gt;
+&lt;th&gt;Original class (Chen et al., 2022)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;New code&lt;/th&gt;
+&lt;th&gt;New class&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;Water&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;Water&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td&gt;Broadleaf evergreen tree, tropical&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td&gt;Broadleaf evergreen forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td&gt;Broadleaf evergreen tree, temperate&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td&gt;Broadleaf evergreen forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous tree, tropical&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous tree, temperate&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous tree, boreal&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td&gt;Needleleaf evergreen tree, temperate&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td&gt;Needleleaf evergreen forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td&gt;Needleleaf evergreen tree, boreal&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td&gt;Needleleaf evergreen forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;td&gt;Needleleaf deciduous tree&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td&gt;Needleleaf deciduous forest&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td&gt;Broadleaf evergreen shrub, temperate&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td&gt;Broadleaf evergreen shrubland&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous shrub, temperate&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous shrubland&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous shrub, boreal&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td&gt;Broadleaf deciduous shrubland&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;13&lt;/td&gt;
+&lt;td&gt;C3 grass, arctic&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td&gt;Grasslands&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;14&lt;/td&gt;
+&lt;td&gt;C3 grass&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td&gt;Grasslands&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td&gt;C4 grass&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td&gt;Grasslands&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;td&gt;Mixed C3/C4 grass&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td&gt;Grasslands&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;td&gt;Barren&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;td&gt;Barren&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;td&gt;Cropland&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td&gt;Cropland&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;19&lt;/td&gt;
+&lt;td&gt;Urban&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td&gt;Urban&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;20&lt;/td&gt;
+&lt;td&gt;Permanent snow and ice&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td&gt;Permanent snow and ice&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
     </item>
     
     <item>
@@ -455,7 +641,206 @@
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>http://joaogoncalves.cc/datasets/chelsa-onestop-baseline/</guid>
-      <description></description>
+      <description>
+
+&lt;h2 id=&#34;chelsa-bioclimatic-and-environmental-predictors-for-species-distribution-models-onestop-project-task-5-1-historical-baseline-1981-2010&#34;&gt;CHELSA Bioclimatic and Environmental Predictors for Species Distribution Models (OneSTOP Project – Task 5.1): Historical Baseline (1981–2010)&lt;/h2&gt;
+
+&lt;p&gt;Access to data in Zenodo: &lt;a href=&#34;https://zenodo.org/records/17644815&#34; target=&#34;_blank&#34;&gt;https://zenodo.org/records/17644815&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This dataset provides bioclimatic and environmental predictor variables used in Species Distribution Models (SDMs) developed within the OneSTOP Project (Task 5.1). The original climatic data are based on the CHELSA v2.1 BIOCLIM+ dataset, which provides high-resolution (~1 km) bioclimatic variables derived from downscaled and bias-corrected climate data.&lt;/p&gt;
+
+&lt;p&gt;For future projections, CHELSA v2.1 climate layers were obtained for all five available CMIP6 Global Circulation Models (GCMs): GFDL-ESM4, UKESM1-0-LL, MPI-ESM1-2-HR, IPSL-CM6A-LR, and MRI-ESM2-0) and corresponding to the relevant SSP scenario. To produce a consistent climatic baseline that matches land-cover projections in the Chen et al. (2022) dataset, all available GCMs were averaged to generate a single ensemble mean for each time period and scenario. This ensemble approach reduces individual model biases and aims to provide a robust representation of mid- and late-century climatic conditions for SDMs. Raster data has been internally scaled and reprojected (bilinear method) in the terra R package.&lt;/p&gt;
+
+&lt;p&gt;All raster layers are provided as GeoTIFF (float) files in the coordinate reference system EPSG:6933, WGS 1984/NSIDC EASE-Grid 2.0 Global (Cylindrical Equal Area projection). The datasets correspond to one of the following temporal windows and SSP scenarios:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Historical Baseline: 1981–2010 (used for model training)&lt;/li&gt;
+&lt;li&gt;Future Mid-Century (2041–2070): SSP1–2.6, SSP3–7.0, SSP5–8.5 (used for model projection)&lt;/li&gt;
+&lt;li&gt;Future Late-Century (2071–2100): SSP1–2.6, SSP3–7.0, SSP5–8.5 (used for model projection)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These predictor/projection datasets are intended for use in SDM workflows to assess climatic suitability and potential species distributions under changing environmental conditions. They were prepared to support the OneSTOP project’s modeling of Invasive Alien Species (IAS) and integration with land-cover projections (Chen et al., 2022).&lt;/p&gt;
+
+&lt;p&gt;Climatic variables were obtained from CHELSA v2.1 (&lt;a href=&#34;https://www.chelsa-climate.org/datasets&#34; target=&#34;_blank&#34;&gt;https://www.chelsa-climate.org/datasets&lt;/a&gt;), including the full set of bioclimatic variables describing temperature and precipitation regimes. In addition to the standard BIOCLIM variables, the predictor set includes BIOCLIM+ metrics such as growing-season length, growing-season precipitation, growing-season mean temperature, growing-degree days above 0 °C, 5 °C, and 10 °C, and net primary productivity, providing an expanded representation of climate conditions relevant to species’ ecological requirements.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;p&gt;Chen, G., Li, X., &amp;amp; Liu, X. (2022). Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios. Scientific Data, 9, 125. &lt;a href=&#34;https://doi.org/10.1038/s41597-022-01208-6&#34; target=&#34;_blank&#34;&gt;https://doi.org/10.1038/s41597-022-01208-6&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;h3 id=&#34;list-of-variables-in-the-dataset&#34;&gt;List of variables in the dataset&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Variable&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BIO1&lt;/td&gt;
+&lt;td&gt;Annual Mean Temperature&lt;/td&gt;
+&lt;td&gt;Mean annual air temperature&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO2&lt;/td&gt;
+&lt;td&gt;Mean Diurnal Range&lt;/td&gt;
+&lt;td&gt;Mean of monthly Tmax - Tmin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO3&lt;/td&gt;
+&lt;td&gt;Isothermality&lt;/td&gt;
+&lt;td&gt;BIO2 / BIO7 x 100&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO4&lt;/td&gt;
+&lt;td&gt;Temperature Seasonality&lt;/td&gt;
+&lt;td&gt;Standard deviation of temperature x 100&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO5&lt;/td&gt;
+&lt;td&gt;Max Temperature of Warmest Month&lt;/td&gt;
+&lt;td&gt;Highest monthly mean temperature&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO6&lt;/td&gt;
+&lt;td&gt;Min Temperature of Coldest Month&lt;/td&gt;
+&lt;td&gt;Lowest monthly mean temperature&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO7&lt;/td&gt;
+&lt;td&gt;Annual Temperature Range&lt;/td&gt;
+&lt;td&gt;BIO5 - BIO6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO8&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Wettest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the wettest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO9&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Driest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the driest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO10&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Warmest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the warmest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO11&lt;/td&gt;
+&lt;td&gt;Mean Temperature of Coldest Quarter&lt;/td&gt;
+&lt;td&gt;Average temperature during the coldest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO12&lt;/td&gt;
+&lt;td&gt;Annual Precipitation&lt;/td&gt;
+&lt;td&gt;Total annual precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO13&lt;/td&gt;
+&lt;td&gt;Precipitation of Wettest Month&lt;/td&gt;
+&lt;td&gt;Highest monthly precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO14&lt;/td&gt;
+&lt;td&gt;Precipitation of Driest Month&lt;/td&gt;
+&lt;td&gt;Lowest monthly precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO15&lt;/td&gt;
+&lt;td&gt;Precipitation Seasonality&lt;/td&gt;
+&lt;td&gt;Coefficient of variation of monthly precipitation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO16&lt;/td&gt;
+&lt;td&gt;Precipitation of Wettest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the wettest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO17&lt;/td&gt;
+&lt;td&gt;Precipitation of Driest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the driest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO18&lt;/td&gt;
+&lt;td&gt;Precipitation of Warmest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the warmest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BIO19&lt;/td&gt;
+&lt;td&gt;Precipitation of Coldest Quarter&lt;/td&gt;
+&lt;td&gt;Total precipitation in the coldest quarter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GDD0&lt;/td&gt;
+&lt;td&gt;Growing Degree Days &amp;gt;0 °C&lt;/td&gt;
+&lt;td&gt;Annual sum of degree-days above 0 °C&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GDD5&lt;/td&gt;
+&lt;td&gt;Growing Degree Days &amp;gt;5 °C&lt;/td&gt;
+&lt;td&gt;Annual sum of degree-days above 5 °C&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GDD10&lt;/td&gt;
+&lt;td&gt;Growing Degree Days &amp;gt;10 °C&lt;/td&gt;
+&lt;td&gt;Annual sum of degree-days above 10 °C&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GSL&lt;/td&gt;
+&lt;td&gt;Growing Season Length&lt;/td&gt;
+&lt;td&gt;Number of days with mean temperature above the growing-season threshold&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GSP&lt;/td&gt;
+&lt;td&gt;Growing Season Precipitation&lt;/td&gt;
+&lt;td&gt;Total precipitation during the growing season&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GST&lt;/td&gt;
+&lt;td&gt;Growing Season Temperature&lt;/td&gt;
+&lt;td&gt;Mean temperature during the growing season&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;NPP&lt;/td&gt;
+&lt;td&gt;Net Primary Productivity&lt;/td&gt;
+&lt;td&gt;Modelled net primary productivity (vegetation biomass production)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
     </item>
     
     <item>
@@ -478,7 +863,124 @@
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0100</pubDate>
       
       <guid>http://joaogoncalves.cc/datasets/cortaderia-uav-occurrences/</guid>
-      <description></description>
+      <description>
+
+&lt;h2 id=&#34;georeferenced-occurrence-records-of-cortaderia-selloana-pampas-grass-across-mainland-portugal-2019-2020-obtained-from-uav-based-surveys-under-the-life-stop-cortaderia-project-life17-nat-es-000495&#34;&gt;Georeferenced occurrence records of Cortaderia selloana (pampas grass) across mainland Portugal (2019–2020) obtained from UAV-based surveys under the LIFE STOP CORTADERIA project (LIFE17 NAT/ES/000495)&lt;/h2&gt;
+
+&lt;p&gt;Access to data in Zenodo: &lt;a href=&#34;https://zenodo.org/records/17409312&#34; target=&#34;_blank&#34;&gt;https://zenodo.org/records/17409312&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;This dataset provides georeferenced occurrence records of Cortaderia selloana (pampas grass; hereafter C. selloana) across mainland Portugal, obtained from high-resolution imagery acquired by Uncrewed Aerial Vehicles (UAVs, or drones) during two campaigns in 2019 and 2020. This data was produced within the framework of the project LIFE17 NAT/ES/000495 – LIFE STOP CORTADERIA: Urgent measures for controlling the spread of Pampa Grass (Cortaderia selloana) in the Atlantic area. The dataset was generated under the contract “Acquisition of services for the elaboration of the cartography of the priority distribution areas of Cortaderia selloana in the study area and respective distribution analysis, prediction and trends” commissioned by the Municipality of Vila Nova de Gaia (Portugal) to ICETA/CIBIO-InBIO, Universidade do Porto.&lt;/p&gt;
+
+&lt;p&gt;A total of 7,756 of aerial photographs were collected at 63 surveyed sites from Valença to Oeiras municipalities. 47,661 individual plants were georeferenced and plant diameter was annotated/estimated based on a circle encompassing the basal area at nadir projection. The number of plants per site ranged from 7 to 6,172 individuals. Plant densities ranged from 1 to 1,682 individuals per hectare. The average plant diameter was 1.5 m ± 0.8 m, with quantiles (25%, 50%, and 75%) at 0.9 m, 1.4 m, and 2.0 m, respectively.&lt;/p&gt;
+
+&lt;h3 id=&#34;dataset-description&#34;&gt;Dataset description&lt;/h3&gt;
+
+&lt;p&gt;Each record corresponds to an individual C. selloana plant with a circle roughly encompassing its basal area observed at nadir in aerial images (i.e., orthomosaics), accompanied by its geographic coordinates (x/y of the centroid) and morphometric attributes (e.g., area, perimeter, estimated plant diameter).&lt;/p&gt;
+
+&lt;p&gt;According to UAV-based surveys the presence of C. selloana was found in a wide range of disturbed and semi-natural environments, corresponding to the following general land-use and habitat types:&lt;/p&gt;
+
+&lt;p&gt;Peri-urban industrial or post-industrial areas, including both active and abandoned sites with sparse or degraded vegetation cover;
+(Semi-)abandoned urban lots (“vacant” or “expectant” spaces) characterized by strong anthropogenic disturbance and colonization by ruderal vegetation;
+Road verges and adjacent areas, most frequently along embankments and highway access ramps;
+Other linear features, both artificial (e.g., railways) and natural (e.g., riverbanks and streams);
+Open semi-natural habitats such as shrublands or grasslands with low and discontinuous vegetation cover, often with exposed soil;
+Estuarine margins and sandbanks, notably in systems such as the Lima River and the Ria de Aveiro;
+Abandoned quarries, spoil heaps, and dumping sites showing clear evidence of anthropogenic disturbance;
+Gardens and landscaped areas, both public and private, where the species often occurs as an ornamental planting.
+The dataset provides a highly detailed spatial baseline for mapping, monitoring, and modelling the current extent of C. selloana invasion in coastal, peri-urban, industrial (or post-industrial) and urbanized areas of Portugal. It constitutes one of the most comprehensive fine-scale geospatial datasets of this invasive species to date and supports the development of predictive ecological models and management strategies aimed at invasive plant control.&lt;/p&gt;
+
+&lt;h3 id=&#34;use-and-applications&#34;&gt;Use and applications&lt;/h3&gt;
+
+&lt;p&gt;This dataset can be used to:&lt;/p&gt;
+
+&lt;p&gt;Quantify the spatial extent and density of C. selloana invaded sites/populations;
+Validate and/or train species distribution or habitat suitability models;
+Support environmental management and restoration planning;
+Monitoring the invasion extent and abundance of C. selloana;
+Assess the environmental drivers of C. selloana abundance and distribution;
+Develop automated detection workflows for invasive species assessment and monitoring using satellite imagery and machine learning algorithms;
+Data availability
+The dataset is publicly available via the Zenodo repository under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Users are required to cite the dataset, the authors of the data mentioned in this page and the LIFE STOP Cortaderia project in any derived work or publication.&lt;/p&gt;
+
+&lt;h3 id=&#34;methods&#34;&gt;Methods&lt;/h3&gt;
+
+&lt;p&gt;Data acquisition and processing
+UAV-based surveys were conducted using a DJI Phantom 4 Pro v2 and a DJI Mavic Pro equipped with an integrated RGB camera. A total of 7,756 orthorectified UAV images were acquired under favourable meteorological conditions during two field campaigns. High-resolution orthomosaics were produced using Structure-from-Motion (SfM) photogrammetric reconstruction techniques, achieving a ground sampling distance of approximately ca. 2 to 5 cm.&lt;/p&gt;
+
+&lt;p&gt;UAV imagery was collected without Ground Control Points (GCPs) or RTK/PPK corrections; consequently, the absolute positional accuracy of the orthomosaics corresponds to the nominal accuracy of the DJI Phantom 4 Pro v2 and the Mavic Pro GNSS systems, typically within a few metres under optimal satellite reception conditions.&lt;/p&gt;
+
+&lt;p&gt;A total of 63 sites surveyed using UAVs from November 2019 to October 2020, covering areas ranging from 1.6 to 20.9 hectares. UAV programmed flights were conducted autonomously at altitudes between 50 and 70 meters.&lt;/p&gt;
+
+&lt;p&gt;3D Photogrammetry / SfM methods
+The photogrammetric reconstruction of UAV imagery was performed in Agisoft Metashape following a Structure-from-Motion (SfM) workflow optimized for high spatial accuracy and detail. Initially, images were aligned at high accuracy with generic and reference preselection enabled, using a key point limit of 50,000 and a tie point limit of 5,000, to generate a sparse point cloud and estimate camera positions.&lt;/p&gt;
+
+&lt;p&gt;The alignment was subsequently refined through camera optimization by fitting the intrinsic parameters (f, cx, cy, k₁–k₃, p₁, p₂) without applying adaptive model fitting or additional corrections. A dense point cloud was then constructed at high quality, with aggressive depth filtering to minimize noise and artifacts, and color information was assigned to each point.&lt;/p&gt;
+
+&lt;p&gt;From this dense cloud, a Digital Elevation Model (DEM)/Digital Surface Model (DSM) was generated using all point classes and interpolated in the WGS 84 / UTM Zone 29N coordinate system. Finally, an orthomosaic was produced over the DEM surface at 2 to 5 cm spatial resolution, employing mosaic blending, hole filling, and refined seamlines to ensure radiometric continuity and geometric accuracy across the final image product.&lt;/p&gt;
+
+&lt;p&gt;Registration of individual plants
+Individual C. selloana plants were manually digitized through detailed photointerpretation of the orthomosaics by trained operators. For each delineated individual using a circle around it, the centroid coordinates and morphometric attributes (e.g., estimated plant diameter) were extracted. The resulting georeferenced dataset represents one of the most detailed spatial inventories of C. selloana at the individual-plant level in mainland Portugal.&lt;/p&gt;
+
+&lt;h3 id=&#34;technical-info&#34;&gt;Technical info&lt;/h3&gt;
+
+&lt;p&gt;Data files and fields
+LifeSTOP_Cortaderia_GeorefIndividualPlants_v1&lt;/p&gt;
+
+&lt;p&gt;Description: Individually georeferenced plants delineated using enclosing circles [polygon/ ESRI Shapefile].&lt;/p&gt;
+
+&lt;p&gt;Fields:&lt;/p&gt;
+
+&lt;p&gt;x_centr/ y_centr - X/Y coordinates (in meters, CRS: WGS 1984/UTM 29N, EPSG:32629)
+area_m2 - area in sq. meters of the circle enclosing the Cortaderia plant
+perim_m - perimeter in meters of the circle enclosing the Cortaderia plant
+diam_m - diameter in meters of the circle enclosing the Cortaderia plant
+flight_id - UAV Flight unique identifier
+data_dir - name of the directory containing UAV orthomosaic imagery.
+LifeSTOP_Cortaderia_UAV_flight_ids_footprints&lt;/p&gt;
+
+&lt;p&gt;Description: UAV flights footprints [polygon/ ESRI Shapefile]&lt;/p&gt;
+
+&lt;p&gt;Fields:&lt;/p&gt;
+
+&lt;p&gt;flight_id - UAV Flight unique identifier
+data_dir - Name of the directory containing UAV orthomosaic imagery
+Shape_Area/Shape_Leng - Area (in hectares and perimeter length in meters)
+LifeSTOP_Cortaderia_UAV_flight_ids_centrs&lt;/p&gt;
+
+&lt;p&gt;Description: Point coordinates corresponding to the centroid of each surveyed area [point/ ESRI Shapefile]&lt;/p&gt;
+
+&lt;p&gt;Fields:&lt;/p&gt;
+
+&lt;p&gt;flight_id - UAV Flight unique identifier
+data_dir - name of the directory containing UAV orthomosaic imagery&lt;/p&gt;
+
+&lt;p&gt;Description
+Geographic coverage&lt;/p&gt;
+
+&lt;p&gt;Country: Portugal (mainland)
+Region: Coastal and peri-urban zones between Vila Nova de Cerveira (North) and Oeiras (Central Portugal)
+Total surveyed area: ~317 hectares
+Number of surveyed sites: 63
+Typical site extent: 1.6 – 20.9 hectares
+Temporal coverage&lt;/p&gt;
+
+&lt;p&gt;UAV surveys: November–December 2019 and September–October 2020
+Coordinate reference system&lt;/p&gt;
+
+&lt;p&gt;CRS: WGS 1984 / UTM 29N (EPSG:32629)
+Geographic units: meters
+File format and structure&lt;/p&gt;
+
+&lt;p&gt;Primary format: ESRI Shapefile (.shp)
+Associated metadata: none
+Compression: ZIP archive containing data&lt;/p&gt;
+
+&lt;h4 id=&#34;temporary-url-for-accessing-uav-orthomosaic-image-data&#34;&gt;TEMPORARY URL FOR ACCESSING UAV ORTHOMOSAIC/IMAGE DATA&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/drive/folders/1ATAzmfSsZZXjqnTAenXraS8tId_xdQHE?usp=sharing&#34; target=&#34;_blank&#34;&gt;Access data here&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>

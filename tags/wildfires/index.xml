@@ -41,7 +41,9 @@ Burn Severity Mapper is a Google Earth Engine app developed within SeverusPT to 
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>http://joaogoncalves.cc/datasets/severuspt/</guid>
-      <description></description>
+      <description>SeverusPT - A multi-source burn severity dataset for mainland Portugal Zenodo record: https://zenodo.org/records/10636820
+Access via the dedicated Data SeverusPT GeoPortal: https://geoportal.severus.pt/products
+Abstract (EN) The SeverusPT project aims to periodically and timely provide relevant and standardized information on burn severity supported by satellite and field observations. Key objectives include developing a spatially explicit framework for assessing, mapping, and predicting burn severity and delivering a co-designed product/service to enhance institutional and operational capacity for fire hazard management and post-fire ecosystem restoration.</description>
     </item>
     
   </channel>

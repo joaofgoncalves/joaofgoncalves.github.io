@@ -300,7 +300,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    0 min read
+    6 min read
   </span>
   
 
@@ -361,6 +361,123 @@
 
     <div class="article-style" itemprop="articleBody">
       
+
+<h2 id="georeferenced-occurrence-records-of-cortaderia-selloana-pampas-grass-across-mainland-portugal-2019-2020-obtained-from-uav-based-surveys-under-the-life-stop-cortaderia-project-life17-nat-es-000495">Georeferenced occurrence records of Cortaderia selloana (pampas grass) across mainland Portugal (2019–2020) obtained from UAV-based surveys under the LIFE STOP CORTADERIA project (LIFE17 NAT/ES/000495)</h2>
+
+<p>Access to data in Zenodo: <a href="https://zenodo.org/records/17409312" target="_blank">https://zenodo.org/records/17409312</a></p>
+
+<h3 id="summary">Summary</h3>
+
+<p>This dataset provides georeferenced occurrence records of Cortaderia selloana (pampas grass; hereafter C. selloana) across mainland Portugal, obtained from high-resolution imagery acquired by Uncrewed Aerial Vehicles (UAVs, or drones) during two campaigns in 2019 and 2020. This data was produced within the framework of the project LIFE17 NAT/ES/000495 – LIFE STOP CORTADERIA: Urgent measures for controlling the spread of Pampa Grass (Cortaderia selloana) in the Atlantic area. The dataset was generated under the contract “Acquisition of services for the elaboration of the cartography of the priority distribution areas of Cortaderia selloana in the study area and respective distribution analysis, prediction and trends” commissioned by the Municipality of Vila Nova de Gaia (Portugal) to ICETA/CIBIO-InBIO, Universidade do Porto.</p>
+
+<p>A total of 7,756 of aerial photographs were collected at 63 surveyed sites from Valença to Oeiras municipalities. 47,661 individual plants were georeferenced and plant diameter was annotated/estimated based on a circle encompassing the basal area at nadir projection. The number of plants per site ranged from 7 to 6,172 individuals. Plant densities ranged from 1 to 1,682 individuals per hectare. The average plant diameter was 1.5 m ± 0.8 m, with quantiles (25%, 50%, and 75%) at 0.9 m, 1.4 m, and 2.0 m, respectively.</p>
+
+<h3 id="dataset-description">Dataset description</h3>
+
+<p>Each record corresponds to an individual C. selloana plant with a circle roughly encompassing its basal area observed at nadir in aerial images (i.e., orthomosaics), accompanied by its geographic coordinates (x/y of the centroid) and morphometric attributes (e.g., area, perimeter, estimated plant diameter).</p>
+
+<p>According to UAV-based surveys the presence of C. selloana was found in a wide range of disturbed and semi-natural environments, corresponding to the following general land-use and habitat types:</p>
+
+<p>Peri-urban industrial or post-industrial areas, including both active and abandoned sites with sparse or degraded vegetation cover;
+(Semi-)abandoned urban lots (“vacant” or “expectant” spaces) characterized by strong anthropogenic disturbance and colonization by ruderal vegetation;
+Road verges and adjacent areas, most frequently along embankments and highway access ramps;
+Other linear features, both artificial (e.g., railways) and natural (e.g., riverbanks and streams);
+Open semi-natural habitats such as shrublands or grasslands with low and discontinuous vegetation cover, often with exposed soil;
+Estuarine margins and sandbanks, notably in systems such as the Lima River and the Ria de Aveiro;
+Abandoned quarries, spoil heaps, and dumping sites showing clear evidence of anthropogenic disturbance;
+Gardens and landscaped areas, both public and private, where the species often occurs as an ornamental planting.
+The dataset provides a highly detailed spatial baseline for mapping, monitoring, and modelling the current extent of C. selloana invasion in coastal, peri-urban, industrial (or post-industrial) and urbanized areas of Portugal. It constitutes one of the most comprehensive fine-scale geospatial datasets of this invasive species to date and supports the development of predictive ecological models and management strategies aimed at invasive plant control.</p>
+
+<h3 id="use-and-applications">Use and applications</h3>
+
+<p>This dataset can be used to:</p>
+
+<p>Quantify the spatial extent and density of C. selloana invaded sites/populations;
+Validate and/or train species distribution or habitat suitability models;
+Support environmental management and restoration planning;
+Monitoring the invasion extent and abundance of C. selloana;
+Assess the environmental drivers of C. selloana abundance and distribution;
+Develop automated detection workflows for invasive species assessment and monitoring using satellite imagery and machine learning algorithms;
+Data availability
+The dataset is publicly available via the Zenodo repository under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Users are required to cite the dataset, the authors of the data mentioned in this page and the LIFE STOP Cortaderia project in any derived work or publication.</p>
+
+<h3 id="methods">Methods</h3>
+
+<p>Data acquisition and processing
+UAV-based surveys were conducted using a DJI Phantom 4 Pro v2 and a DJI Mavic Pro equipped with an integrated RGB camera. A total of 7,756 orthorectified UAV images were acquired under favourable meteorological conditions during two field campaigns. High-resolution orthomosaics were produced using Structure-from-Motion (SfM) photogrammetric reconstruction techniques, achieving a ground sampling distance of approximately ca. 2 to 5 cm.</p>
+
+<p>UAV imagery was collected without Ground Control Points (GCPs) or RTK/PPK corrections; consequently, the absolute positional accuracy of the orthomosaics corresponds to the nominal accuracy of the DJI Phantom 4 Pro v2 and the Mavic Pro GNSS systems, typically within a few metres under optimal satellite reception conditions.</p>
+
+<p>A total of 63 sites surveyed using UAVs from November 2019 to October 2020, covering areas ranging from 1.6 to 20.9 hectares. UAV programmed flights were conducted autonomously at altitudes between 50 and 70 meters.</p>
+
+<p>3D Photogrammetry / SfM methods
+The photogrammetric reconstruction of UAV imagery was performed in Agisoft Metashape following a Structure-from-Motion (SfM) workflow optimized for high spatial accuracy and detail. Initially, images were aligned at high accuracy with generic and reference preselection enabled, using a key point limit of 50,000 and a tie point limit of 5,000, to generate a sparse point cloud and estimate camera positions.</p>
+
+<p>The alignment was subsequently refined through camera optimization by fitting the intrinsic parameters (f, cx, cy, k₁–k₃, p₁, p₂) without applying adaptive model fitting or additional corrections. A dense point cloud was then constructed at high quality, with aggressive depth filtering to minimize noise and artifacts, and color information was assigned to each point.</p>
+
+<p>From this dense cloud, a Digital Elevation Model (DEM)/Digital Surface Model (DSM) was generated using all point classes and interpolated in the WGS 84 / UTM Zone 29N coordinate system. Finally, an orthomosaic was produced over the DEM surface at 2 to 5 cm spatial resolution, employing mosaic blending, hole filling, and refined seamlines to ensure radiometric continuity and geometric accuracy across the final image product.</p>
+
+<p>Registration of individual plants
+Individual C. selloana plants were manually digitized through detailed photointerpretation of the orthomosaics by trained operators. For each delineated individual using a circle around it, the centroid coordinates and morphometric attributes (e.g., estimated plant diameter) were extracted. The resulting georeferenced dataset represents one of the most detailed spatial inventories of C. selloana at the individual-plant level in mainland Portugal.</p>
+
+<h3 id="technical-info">Technical info</h3>
+
+<p>Data files and fields
+LifeSTOP_Cortaderia_GeorefIndividualPlants_v1</p>
+
+<p>Description: Individually georeferenced plants delineated using enclosing circles [polygon/ ESRI Shapefile].</p>
+
+<p>Fields:</p>
+
+<p>x_centr/ y_centr - X/Y coordinates (in meters, CRS: WGS 1984/UTM 29N, EPSG:32629)
+area_m2 - area in sq. meters of the circle enclosing the Cortaderia plant
+perim_m - perimeter in meters of the circle enclosing the Cortaderia plant
+diam_m - diameter in meters of the circle enclosing the Cortaderia plant
+flight_id - UAV Flight unique identifier
+data_dir - name of the directory containing UAV orthomosaic imagery.
+LifeSTOP_Cortaderia_UAV_flight_ids_footprints</p>
+
+<p>Description: UAV flights footprints [polygon/ ESRI Shapefile]</p>
+
+<p>Fields:</p>
+
+<p>flight_id - UAV Flight unique identifier
+data_dir - Name of the directory containing UAV orthomosaic imagery
+Shape_Area/Shape_Leng - Area (in hectares and perimeter length in meters)
+LifeSTOP_Cortaderia_UAV_flight_ids_centrs</p>
+
+<p>Description: Point coordinates corresponding to the centroid of each surveyed area [point/ ESRI Shapefile]</p>
+
+<p>Fields:</p>
+
+<p>flight_id - UAV Flight unique identifier
+data_dir - name of the directory containing UAV orthomosaic imagery</p>
+
+<p>Description
+Geographic coverage</p>
+
+<p>Country: Portugal (mainland)
+Region: Coastal and peri-urban zones between Vila Nova de Cerveira (North) and Oeiras (Central Portugal)
+Total surveyed area: ~317 hectares
+Number of surveyed sites: 63
+Typical site extent: 1.6 – 20.9 hectares
+Temporal coverage</p>
+
+<p>UAV surveys: November–December 2019 and September–October 2020
+Coordinate reference system</p>
+
+<p>CRS: WGS 1984 / UTM 29N (EPSG:32629)
+Geographic units: meters
+File format and structure</p>
+
+<p>Primary format: ESRI Shapefile (.shp)
+Associated metadata: none
+Compression: ZIP archive containing data</p>
+
+<h4 id="temporary-url-for-accessing-uav-orthomosaic-image-data">TEMPORARY URL FOR ACCESSING UAV ORTHOMOSAIC/IMAGE DATA</h4>
+
+<p><a href="https://drive.google.com/drive/folders/1ATAzmfSsZZXjqnTAenXraS8tId_xdQHE?usp=sharing" target="_blank">Access data here</a></p>
+
     </div>
 
     

@@ -300,7 +300,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    0 min read
+    4 min read
   </span>
   
 
@@ -361,6 +361,205 @@
 
     <div class="article-style" itemprop="articleBody">
       
+
+<h2 id="chelsa-bioclimatic-and-environmental-predictors-for-species-distribution-models-onestop-project-task-5-1-historical-baseline-1981-2010">CHELSA Bioclimatic and Environmental Predictors for Species Distribution Models (OneSTOP Project – Task 5.1): Historical Baseline (1981–2010)</h2>
+
+<p>Access to data in Zenodo: <a href="https://zenodo.org/records/17644815" target="_blank">https://zenodo.org/records/17644815</a></p>
+
+<p>This dataset provides bioclimatic and environmental predictor variables used in Species Distribution Models (SDMs) developed within the OneSTOP Project (Task 5.1). The original climatic data are based on the CHELSA v2.1 BIOCLIM+ dataset, which provides high-resolution (~1 km) bioclimatic variables derived from downscaled and bias-corrected climate data.</p>
+
+<p>For future projections, CHELSA v2.1 climate layers were obtained for all five available CMIP6 Global Circulation Models (GCMs): GFDL-ESM4, UKESM1-0-LL, MPI-ESM1-2-HR, IPSL-CM6A-LR, and MRI-ESM2-0) and corresponding to the relevant SSP scenario. To produce a consistent climatic baseline that matches land-cover projections in the Chen et al. (2022) dataset, all available GCMs were averaged to generate a single ensemble mean for each time period and scenario. This ensemble approach reduces individual model biases and aims to provide a robust representation of mid- and late-century climatic conditions for SDMs. Raster data has been internally scaled and reprojected (bilinear method) in the terra R package.</p>
+
+<p>All raster layers are provided as GeoTIFF (float) files in the coordinate reference system EPSG:6933, WGS 1984/NSIDC EASE-Grid 2.0 Global (Cylindrical Equal Area projection). The datasets correspond to one of the following temporal windows and SSP scenarios:</p>
+
+<ul>
+<li>Historical Baseline: 1981–2010 (used for model training)</li>
+<li>Future Mid-Century (2041–2070): SSP1–2.6, SSP3–7.0, SSP5–8.5 (used for model projection)</li>
+<li>Future Late-Century (2071–2100): SSP1–2.6, SSP3–7.0, SSP5–8.5 (used for model projection)</li>
+</ul>
+
+<p>These predictor/projection datasets are intended for use in SDM workflows to assess climatic suitability and potential species distributions under changing environmental conditions. They were prepared to support the OneSTOP project’s modeling of Invasive Alien Species (IAS) and integration with land-cover projections (Chen et al., 2022).</p>
+
+<p>Climatic variables were obtained from CHELSA v2.1 (<a href="https://www.chelsa-climate.org/datasets" target="_blank">https://www.chelsa-climate.org/datasets</a>), including the full set of bioclimatic variables describing temperature and precipitation regimes. In addition to the standard BIOCLIM variables, the predictor set includes BIOCLIM+ metrics such as growing-season length, growing-season precipitation, growing-season mean temperature, growing-degree days above 0 °C, 5 °C, and 10 °C, and net primary productivity, providing an expanded representation of climate conditions relevant to species’ ecological requirements.</p>
+
+<hr />
+
+<h3 id="references">References</h3>
+
+<p>Chen, G., Li, X., &amp; Liu, X. (2022). Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios. Scientific Data, 9, 125. <a href="https://doi.org/10.1038/s41597-022-01208-6" target="_blank">https://doi.org/10.1038/s41597-022-01208-6</a></p>
+
+<h2 id="notes">Notes</h2>
+
+<h3 id="list-of-variables-in-the-dataset">List of variables in the dataset</h3>
+
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>BIO1</td>
+<td>Annual Mean Temperature</td>
+<td>Mean annual air temperature</td>
+</tr>
+
+<tr>
+<td>BIO2</td>
+<td>Mean Diurnal Range</td>
+<td>Mean of monthly Tmax - Tmin</td>
+</tr>
+
+<tr>
+<td>BIO3</td>
+<td>Isothermality</td>
+<td>BIO2 / BIO7 x 100</td>
+</tr>
+
+<tr>
+<td>BIO4</td>
+<td>Temperature Seasonality</td>
+<td>Standard deviation of temperature x 100</td>
+</tr>
+
+<tr>
+<td>BIO5</td>
+<td>Max Temperature of Warmest Month</td>
+<td>Highest monthly mean temperature</td>
+</tr>
+
+<tr>
+<td>BIO6</td>
+<td>Min Temperature of Coldest Month</td>
+<td>Lowest monthly mean temperature</td>
+</tr>
+
+<tr>
+<td>BIO7</td>
+<td>Annual Temperature Range</td>
+<td>BIO5 - BIO6</td>
+</tr>
+
+<tr>
+<td>BIO8</td>
+<td>Mean Temperature of Wettest Quarter</td>
+<td>Average temperature during the wettest quarter</td>
+</tr>
+
+<tr>
+<td>BIO9</td>
+<td>Mean Temperature of Driest Quarter</td>
+<td>Average temperature during the driest quarter</td>
+</tr>
+
+<tr>
+<td>BIO10</td>
+<td>Mean Temperature of Warmest Quarter</td>
+<td>Average temperature during the warmest quarter</td>
+</tr>
+
+<tr>
+<td>BIO11</td>
+<td>Mean Temperature of Coldest Quarter</td>
+<td>Average temperature during the coldest quarter</td>
+</tr>
+
+<tr>
+<td>BIO12</td>
+<td>Annual Precipitation</td>
+<td>Total annual precipitation</td>
+</tr>
+
+<tr>
+<td>BIO13</td>
+<td>Precipitation of Wettest Month</td>
+<td>Highest monthly precipitation</td>
+</tr>
+
+<tr>
+<td>BIO14</td>
+<td>Precipitation of Driest Month</td>
+<td>Lowest monthly precipitation</td>
+</tr>
+
+<tr>
+<td>BIO15</td>
+<td>Precipitation Seasonality</td>
+<td>Coefficient of variation of monthly precipitation</td>
+</tr>
+
+<tr>
+<td>BIO16</td>
+<td>Precipitation of Wettest Quarter</td>
+<td>Total precipitation in the wettest quarter</td>
+</tr>
+
+<tr>
+<td>BIO17</td>
+<td>Precipitation of Driest Quarter</td>
+<td>Total precipitation in the driest quarter</td>
+</tr>
+
+<tr>
+<td>BIO18</td>
+<td>Precipitation of Warmest Quarter</td>
+<td>Total precipitation in the warmest quarter</td>
+</tr>
+
+<tr>
+<td>BIO19</td>
+<td>Precipitation of Coldest Quarter</td>
+<td>Total precipitation in the coldest quarter</td>
+</tr>
+
+<tr>
+<td>GDD0</td>
+<td>Growing Degree Days &gt;0 °C</td>
+<td>Annual sum of degree-days above 0 °C</td>
+</tr>
+
+<tr>
+<td>GDD5</td>
+<td>Growing Degree Days &gt;5 °C</td>
+<td>Annual sum of degree-days above 5 °C</td>
+</tr>
+
+<tr>
+<td>GDD10</td>
+<td>Growing Degree Days &gt;10 °C</td>
+<td>Annual sum of degree-days above 10 °C</td>
+</tr>
+
+<tr>
+<td>GSL</td>
+<td>Growing Season Length</td>
+<td>Number of days with mean temperature above the growing-season threshold</td>
+</tr>
+
+<tr>
+<td>GSP</td>
+<td>Growing Season Precipitation</td>
+<td>Total precipitation during the growing season</td>
+</tr>
+
+<tr>
+<td>GST</td>
+<td>Growing Season Temperature</td>
+<td>Mean temperature during the growing season</td>
+</tr>
+
+<tr>
+<td>NPP</td>
+<td>Net Primary Productivity</td>
+<td>Modelled net primary productivity (vegetation biomass production)</td>
+</tr>
+</tbody>
+</table>
+
     </div>
 
     

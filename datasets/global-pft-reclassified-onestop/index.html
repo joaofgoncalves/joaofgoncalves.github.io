@@ -300,7 +300,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    0 min read
+    3 min read
   </span>
   
 
@@ -361,6 +361,192 @@
 
     <div class="article-style" itemprop="articleBody">
       
+
+<h2 id="reclassified-global-land-cover-plant-functional-type-dataset-1-km-for-baseline-2015-and-future-ssp-rcp-scenarios-based-on-chen-et-al-2022-doi-10-1038-s41597-022-01208-6-onestop-project-task-5-1">Reclassified Global Land-Cover Plant Functional Type Dataset (1 km) for baseline (2015) and future SSP/RCP scenarios based on Chen et al. (2022, DOI:10.1038/s41597-022-01208-6) — OneSTOP Project Task 5.1</h2>
+
+<p>Access to data in Zenodo: <a href="https://zenodo.org/records/17655743" target="_blank">https://zenodo.org/records/17655743</a></p>
+
+<h3 id="summary">Summary</h3>
+
+<p>This dataset provides a reclassified global land-cover product derived from the 1-km plant functional type (PFT) projections of Chen et al. (2022, Scientific Data 9:125). The original Chen et al. dataset simulates global land-use and land-cover change from 2015 to 2100 (at 5-year steps) under the CMIP6 SSP–RCP socio-climatic scenarios, using LUH2-constrained land-demand trajectories and the FLUS cellular automata model. It includes 20 climate-relevant PFT classes, designed primarily for climate modelling applications.</p>
+
+<p>For the OneSTOP Project (Task 5.1), we reclassified these 20 PFT classes into a reduced and ecologically coherent set of 12 land-cover types tailored for species distribution modelling (SDM) and invasive alien species risk assessment. The reclassification aggregates PFTs that share structural vegetation characteristics or similar ecological functions. For example, tropical and temperate broadleaf evergreen trees are grouped into broadleaf evergreen forest, several deciduous tree categories are combined into a broadleaf deciduous forest, the full range of C3/C4 grass PFTs are unified into grasslands, and urban, cropland, barren, water, and permanent snow/ice classes are preserved as distinct categories. This harmonisation produces a land-cover dataset that maintains the spatial detail and scenario-consistent land-change dynamics of Chen et al. (2022), while providing SDM-ready predictors aligned with the CHELSA climate datasets used in OneSTOP Task 5.1.</p>
+
+<p>The dataset includes a baseline period/year, 2015, used as a starting point for modelling land cover/PFT dynamics and as a reference year for modelling in OneSTOP Task 5.1. The dataset also includes multiple future scenarios (SSP1-2.6, SSP3-7.0, and SSP5-8.5) spanning 2015 to 2100 at 5-year time steps, necessary for developing climate- and land-cover-aware SDMs. Beyond the scenarios available in this reclassified version, the original dataset includes additional SSP scenarios: SSP1-1.9, SSP2-4.5, SSP4-3.4, SSP4-6.0, and SSP5-3.4, not used for modelling in OneSTOP T5.1.</p>
+
+<p>All outputs are delivered as single-band GeoTIFF rasters (as 8-bit signed integer) at 1-km spatial resolution. The coordinate system is EPSG:6933 - WGS 84 / NSIDC EASE-Grid 2.0 Global, Cylindrical Equal Area Projection. Data preprocessing was entirely done in R using the terra package for handling raster layers. This reclassified dataset offers a simplified yet ecologically meaningful land-cover representation that improves interpretability and computational efficiency in SDM and biodiversity and invasion-risk applications.</p>
+
+<h3 id="data-files">Data files</h3>
+
+<p>global_PFT_2015_recl.tif - 2015 baseline global land cover/PFT data</p>
+
+<p>File naming structure allows filtering files, for example: global_PFT_SSP1_RCP26_2100_recl.tif</p>
+
+<p>scenario SSP1-2.6
+year: 2100
+_recl - indicates the reclassified version distributed here</p>
+
+<h3 id="references">References</h3>
+
+<p>Chen, G., Li, X. &amp; Liu, X. Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios. Sci Data 9, 125 (2022). <a href="https://doi.org/10.1038/s41597-022-01208-6" target="_blank">https://doi.org/10.1038/s41597-022-01208-6</a></p>
+
+<h3 id="technical-info-english">Technical info (English)</h3>
+
+<p>List of the 20 original land cover/PFT classes and the new 12 classes based on the reclassification scheme proposed for this dataset</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">Original code</th>
+<th>Original class (Chen et al., 2022)</th>
+<th align="right">New code</th>
+<th>New class</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">1</td>
+<td>Water</td>
+<td align="right">1</td>
+<td>Water</td>
+</tr>
+
+<tr>
+<td align="right">2</td>
+<td>Broadleaf evergreen tree, tropical</td>
+<td align="right">2</td>
+<td>Broadleaf evergreen forest</td>
+</tr>
+
+<tr>
+<td align="right">3</td>
+<td>Broadleaf evergreen tree, temperate</td>
+<td align="right">2</td>
+<td>Broadleaf evergreen forest</td>
+</tr>
+
+<tr>
+<td align="right">4</td>
+<td>Broadleaf deciduous tree, tropical</td>
+<td align="right">3</td>
+<td>Broadleaf deciduous forest</td>
+</tr>
+
+<tr>
+<td align="right">5</td>
+<td>Broadleaf deciduous tree, temperate</td>
+<td align="right">3</td>
+<td>Broadleaf deciduous forest</td>
+</tr>
+
+<tr>
+<td align="right">6</td>
+<td>Broadleaf deciduous tree, boreal</td>
+<td align="right">3</td>
+<td>Broadleaf deciduous forest</td>
+</tr>
+
+<tr>
+<td align="right">7</td>
+<td>Needleleaf evergreen tree, temperate</td>
+<td align="right">4</td>
+<td>Needleleaf evergreen forest</td>
+</tr>
+
+<tr>
+<td align="right">8</td>
+<td>Needleleaf evergreen tree, boreal</td>
+<td align="right">4</td>
+<td>Needleleaf evergreen forest</td>
+</tr>
+
+<tr>
+<td align="right">9</td>
+<td>Needleleaf deciduous tree</td>
+<td align="right">5</td>
+<td>Needleleaf deciduous forest</td>
+</tr>
+
+<tr>
+<td align="right">10</td>
+<td>Broadleaf evergreen shrub, temperate</td>
+<td align="right">6</td>
+<td>Broadleaf evergreen shrubland</td>
+</tr>
+
+<tr>
+<td align="right">11</td>
+<td>Broadleaf deciduous shrub, temperate</td>
+<td align="right">7</td>
+<td>Broadleaf deciduous shrubland</td>
+</tr>
+
+<tr>
+<td align="right">12</td>
+<td>Broadleaf deciduous shrub, boreal</td>
+<td align="right">7</td>
+<td>Broadleaf deciduous shrubland</td>
+</tr>
+
+<tr>
+<td align="right">13</td>
+<td>C3 grass, arctic</td>
+<td align="right">8</td>
+<td>Grasslands</td>
+</tr>
+
+<tr>
+<td align="right">14</td>
+<td>C3 grass</td>
+<td align="right">8</td>
+<td>Grasslands</td>
+</tr>
+
+<tr>
+<td align="right">15</td>
+<td>C4 grass</td>
+<td align="right">8</td>
+<td>Grasslands</td>
+</tr>
+
+<tr>
+<td align="right">16</td>
+<td>Mixed C3/C4 grass</td>
+<td align="right">8</td>
+<td>Grasslands</td>
+</tr>
+
+<tr>
+<td align="right">17</td>
+<td>Barren</td>
+<td align="right">9</td>
+<td>Barren</td>
+</tr>
+
+<tr>
+<td align="right">18</td>
+<td>Cropland</td>
+<td align="right">10</td>
+<td>Cropland</td>
+</tr>
+
+<tr>
+<td align="right">19</td>
+<td>Urban</td>
+<td align="right">11</td>
+<td>Urban</td>
+</tr>
+
+<tr>
+<td align="right">20</td>
+<td>Permanent snow and ice</td>
+<td align="right">12</td>
+<td>Permanent snow and ice</td>
+</tr>
+</tbody>
+</table>
+
     </div>
 
     
