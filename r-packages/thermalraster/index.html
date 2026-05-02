@@ -307,7 +307,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -373,6 +373,19 @@
 
 <p>ThermalRaster is an R package designed to enhance the processing and analysis of FLIR thermal and RGB images. It offers a comprehensive suite of functions for extracting, processing, and visualizing thermal data embedded within the metadata of FLIR images. Key features also include retrieving full and cropped RGB images. Imagery is returned as <code>SpatRaster</code> objects compatible with the <code>terra</code> package, enabling users to profit from this package&rsquo;s features/toolkit.</p>
 
+<h3 id="repository">Repository</h3>
+
+<p><a href="https://github.com/joaofgoncalves/ThermalRaster" target="_blank">GitHub - joaofgoncalves/ThermalRaster</a></p>
+
+<h3 id="disclaimer">⚠️ Disclaimer</h3>
+
+<p>This package is currently in a <strong>beta / experimental stage</strong>.<br />
+It may contain bugs, incomplete features, or breaking changes.</p>
+
+<p>Use it at your own risk, and please verify results carefully before relying on them in production or critical workflows.</p>
+
+<p>Feedback, bug reports, and contributions are highly appreciated.</p>
+
 <h3 id="key-features">Key Features</h3>
 
 <ul>
@@ -380,10 +393,6 @@
 <li><strong>Generating Synthetic or Predicted Thermal Images</strong>: Using the overlap between low-resolution thermal imagery with high-resolution RGB images, the package enables the creation of synthetic or predicted thermal images for either cropped or full RGB images. This is achieved through the application of the Random Forest algorithm (via the <code>ranger</code> package) or Deep Learning methodologies (utilizing <code>keras</code>/<code>tensorflow</code>).</li>
 <li><strong>Working with Regions-of-Interest (ROIs)</strong>: The package enables the handling of JSON annotations/masks from Roboflow, enabling the extraction of ROIs from the images for further analysis, making it possible to assess, plot, analyze and model fine-scale thermal variation in micro-habitats. ROIs can also be generated with the <code>terra</code> package as <code>SpatVector</code> objects.</li>
 </ul>
-
-<h3 id="repository">Repository</h3>
-
-<p><a href="https://github.com/joaofgoncalves/ThermalRaster" target="_blank">GitHub - joaofgoncalves/ThermalRaster</a></p>
 
     </div>
 

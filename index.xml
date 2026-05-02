@@ -537,6 +537,10 @@
 
 &lt;p&gt;For more details about installation and how to use the package go to the tutorial &lt;a href=&#34;https://segoptim.bitbucket.io/docs/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Check also the paper describing the package functionalities &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0303243418303556&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
+&lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/SegOptim&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/SegOptim&lt;/a&gt;&lt;/p&gt;
+
 &lt;h3 id=&#34;functionalities&#34;&gt;Functionalities&lt;/h3&gt;
 
 &lt;p&gt;Currently the package offers several functionalities, namely:
@@ -570,10 +574,6 @@
 - Hard competitive learning algorithm
 - K-means
 - Neural gas algorithm&lt;/p&gt;
-
-&lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/SegOptim&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/SegOptim&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

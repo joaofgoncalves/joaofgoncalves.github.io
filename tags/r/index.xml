@@ -38,7 +38,7 @@ For more details about installation and how to use the package go to the tutoria
       
       <guid>http://joaogoncalves.cc/r-packages/rsegm/</guid>
       <description>rsegm The rsegm package provides scalable, high-performance tools for geospatial image segmentation built on top of terra, Rcpp, and modern block-wise / tiled processing strategies. It is designed for object-based image analysis (OBIA) workflows on large raster datasets, including satellite and aerial imagery. The core focus is on producing spatially coherent, integer-labeled segment rasters that integrate cleanly with downstream raster and vector analysis in R.
-Key Features  Graph-based and hybrid segmentation algorithms: Includes Fast Felzenszwalb-Huttenlocher (FH) graph-based segmentation, Hybrid FH + region-level Mean Shift segmentation, Baatz-Schäpe multi-resolution, Fast Baatz-Schäpe multi-resolution, and SEEDS.</description>
+Repository GitHub - joaofgoncalves/rsegm</description>
     </item>
     
     <item>
