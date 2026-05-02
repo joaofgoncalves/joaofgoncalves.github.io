@@ -11,6 +11,152 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Burn Severity Analyst</title>
+      <link>http://joaogoncalves.cc/earth-engine-apps/burn-severity-analyst/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/earth-engine-apps/burn-severity-analyst/</guid>
+      <description>
+
+&lt;h2 id=&#34;burn-severity-analyst&#34;&gt;Burn Severity Analyst&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Version:&lt;/strong&gt; v0.1.5b&lt;br /&gt;
+&lt;strong&gt;App:&lt;/strong&gt; &lt;a href=&#34;https://joaofgo.users.earthengine.app/view/severuspt-burn-severity-analyst&#34; target=&#34;_blank&#34;&gt;Burn Severity Analyst&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tutorial/manual:&lt;/strong&gt; &lt;a href=&#34;https://severus.pt/en/fire-severity-analyst-help/&#34; target=&#34;_blank&#34;&gt;Fire severity analyst - SeverusPT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Burn Severity Analyst is a Google Earth Engine app developed to explore fire severity and recovery through satellite image time series. Instead of producing a single burn severity map, the app focuses on temporal profiles: users can inspect how spectral indices change before and after a fire and compare the post-fire trajectory of vegetation or burned surfaces across different areas.&lt;/p&gt;
+
+&lt;p&gt;The app supports analyses based on the Normalized Burn Ratio (NBR) and the Normalized Difference Vegetation Index (NDVI), two indices commonly used to detect fire effects and vegetation condition. The time-series workflow is useful for identifying abrupt breaks associated with fire events, tracking early post-fire response, and comparing recovery patterns over weeks, months, or years.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-functionality&#34;&gt;Main functionality&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Generate NBR or NDVI time series for a selected area of interest.&lt;/li&gt;
+&lt;li&gt;Work with user-drawn geometries, coordinate-based circular buffers, or existing burned area polygons.&lt;/li&gt;
+&lt;li&gt;Use satellite image collections from MODIS, Landsat 5, Landsat 7, Landsat 8, and Sentinel-2.&lt;/li&gt;
+&lt;li&gt;Add annual burned area layers for mainland Portugal from EFFIS and ICNF sources.&lt;/li&gt;
+&lt;li&gt;Select a burned area polygon directly on the map and use it as the analysis geometry.&lt;/li&gt;
+&lt;li&gt;Compute pre- and post-fire deltas based on user-defined temporal windows.&lt;/li&gt;
+&lt;li&gt;Export generated charts from the Earth Engine interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;typical-use-cases&#34;&gt;Typical use cases&lt;/h3&gt;
+
+&lt;p&gt;The app is designed for exploratory post-fire assessment. A user can add a burned area layer, select a fire scar, choose a satellite sensor and spectral index, and define the analysis dates. After the time series is plotted, the secondary delta chart helps summarize how much conditions changed relative to the selected fire date and how that difference evolves over time.&lt;/p&gt;
+
+&lt;p&gt;This makes the app especially useful for screening burned areas before more detailed mapping, comparing recovery between locations, or communicating fire effects with time-series evidence rather than static maps alone.&lt;/p&gt;
+
+&lt;h3 id=&#34;related-resources&#34;&gt;Related resources&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://severus.pt/en/fire-severity-analyst-help/&#34; target=&#34;_blank&#34;&gt;Fire severity analyst help page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://effis.jrc.ec.europa.eu/&#34; target=&#34;_blank&#34;&gt;European Forest Fire Information System (EFFIS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://geocatalogo.icnf.pt/&#34; target=&#34;_blank&#34;&gt;ICNF geographic catalogue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/earth-engine/guides/apps&#34; target=&#34;_blank&#34;&gt;Google Earth Engine Apps documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Burn Severity Mapper</title>
+      <link>http://joaogoncalves.cc/earth-engine-apps/burn-severity-mapper/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/earth-engine-apps/burn-severity-mapper/</guid>
+      <description>
+
+&lt;h2 id=&#34;burn-severity-mapper&#34;&gt;Burn Severity Mapper&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;App:&lt;/strong&gt; &lt;a href=&#34;https://joaofgo.users.earthengine.app/view/severuspt-burn-severity-mapper&#34; target=&#34;_blank&#34;&gt;Burn Severity Mapper&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Manual:&lt;/strong&gt; &lt;a href=&#34;https://severus.pt/en/burn-severity-mapper/&#34; target=&#34;_blank&#34;&gt;Burn Severity Mapper user manual&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Burn Severity Mapper is a Google Earth Engine app developed within SeverusPT to facilitate the production of burn severity maps from optical satellite imagery. The app implements a pre- versus post-fire comparison based on the Normalized Burn Ratio (NBR), reducing the amount of manual work usually required to search, subset, filter, composite, process, and export satellite data.&lt;/p&gt;
+
+&lt;p&gt;The app is optimized for mainland Portugal, where ancillary burned area datasets from EFFIS and ICNF can be used to support fire selection and interpretation. The core workflow, however, can be applied to any user-defined area where suitable pre- and post-fire imagery is available.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-functionality&#34;&gt;Main functionality&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Define an Area of Interest using interactive geometries.&lt;/li&gt;
+&lt;li&gt;Select Sentinel-2, Landsat 8, or Landsat 9 imagery.&lt;/li&gt;
+&lt;li&gt;Configure pre- and post-fire periods using a fire date, explicit date ranges, or a same-season comparison with the previous year.&lt;/li&gt;
+&lt;li&gt;Filter satellite images by cloud cover and inspect the selected image list.&lt;/li&gt;
+&lt;li&gt;Generate dNBR, RdNBR, RBR, and categorical burn severity layers.&lt;/li&gt;
+&lt;li&gt;Visualize continuous and classified severity outputs in the map interface.&lt;/li&gt;
+&lt;li&gt;Segment the burned perimeter using a threshold-based procedure that combines dNBR and Change Vector Analysis magnitude.&lt;/li&gt;
+&lt;li&gt;Calculate total burned area and burned area by severity class.&lt;/li&gt;
+&lt;li&gt;Download outputs as GeoTIFF or KML where Earth Engine export limits allow it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;burn-severity-indicators&#34;&gt;Burn severity indicators&lt;/h3&gt;
+
+&lt;p&gt;The app uses NBR, calculated from near-infrared and shortwave-infrared reflectance, as the basis for comparing pre- and post-fire conditions. It then derives three related burn severity indicators:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;dNBR:&lt;/strong&gt; the difference between pre-fire and post-fire NBR.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RdNBR:&lt;/strong&gt; a relativized dNBR indicator that accounts for pre-fire NBR conditions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RBR:&lt;/strong&gt; a relative burn ratio designed to normalize dNBR by pre-fire conditions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The categorical dNBR output uses five severity classes: unburnt/very-low, low, moderate, high, and very-high. These classes provide a rapid way to interpret the spatial pattern of fire effects and to calculate area summaries by severity level.&lt;/p&gt;
+
+&lt;h3 id=&#34;related-resources&#34;&gt;Related resources&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://severus.pt/en/burn-severity-mapper/&#34; target=&#34;_blank&#34;&gt;Burn Severity Mapper manual page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://severus.pt/wp-content/uploads/2024/03/SPT_BurnSeverityMapper-UserManual_last-version.pdf&#34; target=&#34;_blank&#34;&gt;PDF user manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://severus.pt/&#34; target=&#34;_blank&#34;&gt;SeverusPT project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/earth-engine/guides/apps&#34; target=&#34;_blank&#34;&gt;Google Earth Engine Apps documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Preliminary Assessment of Storm Kristin Impacts</title>
+      <link>http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/</guid>
+      <description>
+
+&lt;h2 id=&#34;preliminary-assessment-of-storm-kristin-impacts&#34;&gt;Preliminary Assessment of Storm Kristin Impacts&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Original title:&lt;/strong&gt; Avaliação preliminar do impacto da Depressão Kristin&lt;br /&gt;
+&lt;strong&gt;App:&lt;/strong&gt; &lt;a href=&#34;https://midyear-byway-378403.projects.earthengine.app/view/analise-preliminar-depressao-kristin-pt&#34; target=&#34;_blank&#34;&gt;Avaliação preliminar do impacto da Depressão Kristin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This Google Earth Engine app was created for a preliminary assessment of the spatial impacts associated with Storm Kristin in Portugal. In Portuguese meteorological usage, &amp;ldquo;depressão&amp;rdquo; refers to the low-pressure storm system; the English title used here is therefore &lt;strong&gt;Preliminary Assessment of Storm Kristin Impacts&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Storm Kristin was an extreme wind event that affected mainland Portugal in late January 2026. According to IPMA, the system underwent explosive cyclogenesis west of the Portuguese coast between 27 and 28 January 2026 and was named Storm Kristin by IPMA. The strongest impacts were associated with very intense wind, including a recovered IPMA observation of 156 km/h at Leiria aerodrome and a maximum instantaneous value of 175.9 km/h at the Monte Real air base.&lt;/p&gt;
+
+&lt;p&gt;The app provides a rapid Earth observation interface for exploring the geographic footprint of this event. It is intended as a first-look tool: users can inspect affected areas, compare spatial patterns, and support field or institutional assessments with satellite-based context.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-functionality&#34;&gt;Main functionality&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Provide a web map focused on the preliminary spatial assessment of Storm Kristin impacts.&lt;/li&gt;
+&lt;li&gt;Support rapid visual inspection of areas affected by the event.&lt;/li&gt;
+&lt;li&gt;Use Google Earth Engine as the processing and visualization environment.&lt;/li&gt;
+&lt;li&gt;Make the analysis accessible through a public Earth Engine app URL.&lt;/li&gt;
+&lt;li&gt;Complement official meteorological and civil protection information with spatial evidence from Earth observation data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;context&#34;&gt;Context&lt;/h3&gt;
+
+&lt;p&gt;Official Portuguese government communications described Storm Kristin as causing significant damage to several districts in central and western Portugal, leading to a disaster situation status and a coordinated national response. The Government also reported major disruption to electricity supply during the immediate aftermath, with around one million people initially without power before progressive restoration.&lt;/p&gt;
+
+&lt;p&gt;The app should be interpreted as a preliminary remote-sensing product rather than a final damage census. Its value is in quickly translating event-scale satellite information into an interactive interface that can help prioritize inspection, compare affected areas, and communicate the spatial dimension of the storm.&lt;/p&gt;
+
+&lt;h3 id=&#34;related-resources&#34;&gt;Related resources&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ipma.pt/pt/media/noticias/news.detail.jsp?f=Tempestade_kristin_portugal_continental.html&amp;amp;y=2026&#34; target=&#34;_blank&#34;&gt;Storm Kristin technical note - IPMA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.portugal.gov.pt/en/gc25/communication/news-item?i=storm-kristin-government-mobilises-national-response&#34; target=&#34;_blank&#34;&gt;Storm Kristin government response&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/earth-engine/guides/apps&#34; target=&#34;_blank&#34;&gt;Google Earth Engine Apps documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Mapping Spatial Patterns and Recent Changes in Quercus pyrenaica (Willd.) Forests Using Remote Sensing and Machine Learning</title>
       <link>http://joaogoncalves.cc/publication/2026_04_passos_et_al_mapping-spatial-patterns-and-recent-changes-in-que/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
@@ -214,75 +360,6 @@
 &lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/ThermalRaster&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/ThermalRaster&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>rsegm</title>
-      <link>http://joaogoncalves.cc/r-packages/rsegm/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/r-packages/rsegm/</guid>
-      <description>
-
-&lt;h2 id=&#34;rsegm&#34;&gt;rsegm&lt;/h2&gt;
-
-&lt;p&gt;The &lt;code&gt;rsegm&lt;/code&gt; package provides scalable, high-performance tools for geospatial image segmentation built on top of &lt;code&gt;terra&lt;/code&gt;, &lt;code&gt;Rcpp&lt;/code&gt;, and modern block-wise / tiled processing strategies. It is designed for object-based image analysis (OBIA) workflows on large raster datasets, including satellite and aerial imagery. The core focus is on producing spatially coherent, integer-labeled segment rasters that integrate cleanly with downstream raster and vector analysis in R.&lt;/p&gt;
-
-&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Graph-based and hybrid segmentation algorithms&lt;/strong&gt;: Includes Fast Felzenszwalb-Huttenlocher (FH) graph-based segmentation, Hybrid FH + region-level Mean Shift segmentation, Baatz-Schäpe multi-resolution, Fast Baatz-Schäpe multi-resolution, and SEEDS.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Large-raster support&lt;/strong&gt;: Robust tiled processing for rasters that do not fit comfortably in memory, and seam-aware merging to avoid boundary artifacts.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Efficient C++ backends&lt;/strong&gt;: Computationally intensive steps implemented in Rcpp for speed and scalability.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;terra-native design&lt;/strong&gt;: Uses &lt;code&gt;SpatRaster&lt;/code&gt; throughout and produces standard GeoTIFF outputs with integer segment IDs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;segmentation-methods&#34;&gt;Segmentation Methods&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;FH graph-based segmentation&lt;/strong&gt;: A fast, noise-robust method often used to generate superpixels or initial regions, suitable for large multi-band rasters.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;FH + mean shift hybrid segmentation&lt;/strong&gt;: A two-stage approach combining FH over-segmentation with region-level Mean Shift refinement to merge spectrally similar regions efficiently.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mean Shift segmentation&lt;/strong&gt;: A pixel-domain mean-shift filtering and clustering method that produces smooth, spectrally homogeneous segments.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Baatz–Schäpe multiresolution segmentation&lt;/strong&gt;: A classical OBIA algorithm that iteratively merges adjacent regions based on spectral heterogeneity and shape criteria.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fast Baatz–Schäpe multiresolution segmentation&lt;/strong&gt;: An optimized variant of the Baatz–Schäpe algorithm using efficient region bookkeeping and priority-queue merging.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SEEDS superpixel segmentation&lt;/strong&gt;: A hierarchical, histogram-based superpixel method that starts from a regular grid and refines boundaries via local block moves.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;repository&#34;&gt;Repository&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/joaofgoncalves/rsegm&#34; target=&#34;_blank&#34;&gt;GitHub - joaofgoncalves/rsegm&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Landscape functioning in reservoir water quality prediction: Current use and predictive capacity</title>
-      <link>http://joaogoncalves.cc/publication/2024_10_portela_et_al_landscape-functioning-in-reservoir-water-quality-p/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/publication/2024_10_portela_et_al_landscape-functioning-in-reservoir-water-quality-p/</guid>
-      <description>
-
-&lt;h3 id=&#34;full-abstract&#34;&gt;Full abstract&lt;/h3&gt;
-
-&lt;p&gt;Reservoirs fulfil several societal needs, including water storage, energy production, flood control and recreation. However, the interruption of the river continuum may cause water quality declines that compromise water use. The surrounding landscape is a key driver of water quality variation in space and time, both across and within catchments. Therefore, understanding how landscape composition, structure and functioning influence reservoir water quality can help address management challenges. Here, we aim to investigate the current use and predictive capacity of landscape functioning indicators for reservoir water quality prediction. First, we carried out a literature review to investigate which landscape factors are most frequently studied as drivers of water quality in lentic systems. Then, we tested the predictive capacity of landscape functioning indicators in four reservoirs in Portugal using linear mixed models and multi‐model inference. The literature review shows that most studies assess the effects of landscape composition while landscape functioning is rarely included. Our test using four reservoirs suggests that landscape functioning indicators, namely greenness and brightness, can complement landscape composition and structure indicators, improving the capacity to predict total suspended solids, chlorophyll‐a, and total phosphorous. Landscape functioning indicators portrayed temporal variability in ecosystem dynamics that was not encompassed by landscape composition or structure indicators and may be relevant to predict specific water quality parameters. Our results show landscape functioning indicators can improve modelling of landscape contributions to water quality and thus have great potential to contribute to monitoring, modelling and forecast systems for water quality and ecological status.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How can landscape visual assessment inform landscape planning and management?–Alto Douro Wine region case study, Portugal</title>
-      <link>http://joaogoncalves.cc/publication/2024_03_medeiros_et_al_how-can-landscape-visual-assessment-inform-landsca/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://joaogoncalves.cc/publication/2024_03_medeiros_et_al_how-can-landscape-visual-assessment-inform-landsca/</guid>
-      <description>
-
-&lt;h3 id=&#34;full-abstract&#34;&gt;Full abstract&lt;/h3&gt;
-
-&lt;p&gt;Upon significant land-use changes, understanding how to measure the visual quality is crucial for landscape monitoring, and policymaking. This study aims to apply an expert protocol to the Alto Douro Wine Region (ADWR), an evolving and living cultural landscape classified by UNESCO.
-Six visual basins representative of the heterogeneity of ADWR were evaluated: three subjected to monitoring since 2001, with less land use change and three unmonitored with higher change. The visual quality was assessed through an expert protocol divided into three attributes: physical, aesthetic, and psychophysical.
-Results show that monitored landscapes obtained higher LVQ scores correlated with imageability, color diversity and land use mosaic. Regarding land-use change, landscapes with higher alteration coincide with lower visual quality. Respondents’ preferences and socio sociodemographic correlations are further discussed.
-According to the findings, field enlargement and consequent destruction of traditional vineyards with terraces and olive grove hedges negatively affect the aesthetic value of the Douro landscape. As a result, the management efforts for maintaining terraces and olive grove hedges should have priority. LVQ protocols are powerful tools that should enter more into the landscape quality assessment routine as they are useful to identify priority measures and monitor landscape evolution through time.&lt;/p&gt;
 </description>
     </item>
     

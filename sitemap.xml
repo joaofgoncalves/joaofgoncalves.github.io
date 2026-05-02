@@ -5,6 +5,42 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/earth-engine-apps/burn-severity-analyst/</loc>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/earth-engine-apps/burn-severity-mapper/</loc>
+      <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/</loc>
+      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/earth-engine-apps/</loc>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/publication/2026_04_passos_et_al_mapping-spatial-patterns-and-recent-changes-in-que/</loc>
       <lastmod>2026-04-01T00:00:00+00:00</lastmod>
     </url>
@@ -893,7 +929,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/burn-severity/</loc>
-      <lastmod>2024-02-13T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -951,8 +987,38 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/tags/extreme-events/</loc>
+      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/fire-recovery/</loc>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/tags/geospatial/</loc>
       <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/google-earth-engine/</loc>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1032,7 +1098,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/portugal/</loc>
-      <lastmod>2025-10-01T00:00:00+01:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1072,7 +1138,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/remote-sensing/</loc>
-      <lastmod>2025-10-01T00:00:00+01:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1091,8 +1157,28 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/tags/severuspt/</loc>
+      <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/tags/species-distribution-models/</loc>
       <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/storm-impact/</loc>
+      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1132,7 +1218,7 @@
     <url>
     
       <loc>http://joaogoncalves.cc/tags/wildfires/</loc>
-      <lastmod>2024-02-13T00:00:00+00:00</lastmod>
+      <lastmod>2026-05-02T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     

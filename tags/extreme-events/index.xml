@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extreme Events on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/tags/extreme-events/</link>
+    <description>Recent content in Extreme Events on João Gonçalves</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2026</copyright>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://joaogoncalves.cc/tags/extreme-events/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Preliminary Assessment of Storm Kristin Impacts</title>
+      <link>http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/</guid>
+      <description>Preliminary Assessment of Storm Kristin Impacts Original title: Avaliação preliminar do impacto da Depressão Kristin
+App: Avaliação preliminar do impacto da Depressão Kristin
+This Google Earth Engine app was created for a preliminary assessment of the spatial impacts associated with Storm Kristin in Portugal. In Portuguese meteorological usage, &amp;ldquo;depressão&amp;rdquo; refers to the low-pressure storm system; the English title used here is therefore Preliminary Assessment of Storm Kristin Impacts.
+Storm Kristin was an extreme wind event that affected mainland Portugal in late January 2026.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fire Recovery on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/tags/fire-recovery/</link>
+    <description>Recent content in Fire Recovery on João Gonçalves</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2026</copyright>
+    <lastBuildDate>Sat, 02 May 2026 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="http://joaogoncalves.cc/tags/fire-recovery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Burn Severity Analyst</title>
+      <link>http://joaogoncalves.cc/earth-engine-apps/burn-severity-analyst/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/earth-engine-apps/burn-severity-analyst/</guid>
+      <description>Burn Severity Analyst Version: v0.1.5b
+App: Burn Severity Analyst
+Tutorial/manual: Fire severity analyst - SeverusPT
+Burn Severity Analyst is a Google Earth Engine app developed to explore fire severity and recovery through satellite image time series. Instead of producing a single burn severity map, the app focuses on temporal profiles: users can inspect how spectral indices change before and after a fire and compare the post-fire trajectory of vegetation or burned surfaces across different areas.</description>
+    </item>
+    
+  </channel>
+</rss>

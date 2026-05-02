@@ -67,6 +67,15 @@
     </item>
     
     <item>
+      <title>Earth-Engine apps</title>
+      <link>http://joaogoncalves.cc/home/earth-engine-apps/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/earth-engine-apps/</guid>
+      <description>This section gathers web applications I have developed with Google Earth Engine to make satellite-based environmental analysis available through public, interactive interfaces. These apps focus on operational workflows where users need to inspect an event, define an area of interest, compare satellite observations through time, and export or interpret results without having to write Earth Engine code.</description>
+    </item>
+    
+    <item>
       <title>Tags</title>
       <link>http://joaogoncalves.cc/home/tags/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0100</pubDate>

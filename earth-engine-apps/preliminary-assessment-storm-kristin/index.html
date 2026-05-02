@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.53" />
+  <meta name="author" content="João Gonçalves">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="A Google Earth Engine app for preliminary remote-sensing assessment of the impacts of Storm Kristin in Portugal.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-114386225-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="http://joaogoncalves.cc/index.xml" type="application/rss+xml" title="João Gonçalves">
+  <link rel="feed" href="http://joaogoncalves.cc/index.xml" type="application/rss+xml" title="João Gonçalves">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="João Gonçalves">
+  <meta property="og:url" content="http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/">
+  <meta property="og:title" content="Preliminary Assessment of Storm Kristin Impacts | João Gonçalves">
+  <meta property="og:description" content="A Google Earth Engine app for preliminary remote-sensing assessment of the impacts of Storm Kristin in Portugal.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2026-02-01T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2026-02-01T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Preliminary Assessment of Storm Kristin Impacts | João Gonçalves</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">João Gonçalves</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#r-packages">
+            
+            <span>R-packages</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#datasets">
+            
+            <span>Datasets</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#earth-engine-apps">
+            
+            <span>Earth-Engine apps</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Preliminary Assessment of Storm Kristin Impacts</h1>
+
+    
+
+<div class="article-metadata">
+
+  
+
+  <span class="article-date">
+    
+    <meta content="2026-02-01 00:00:00 &#43;0000 GMT" itemprop="datePublished">
+    <time datetime="2026-02-01 00:00:00 &#43;0000 GMT" itemprop="dateModified">
+      Feb 1, 2026
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="João Gonçalves">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="http://joaogoncalves.cc/earth-engine-apps/preliminary-assessment-storm-kristin/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Preliminary%20Assessment%20of%20Storm%20Kristin%20Impacts&amp;url=http%3a%2f%2fjoaogoncalves.cc%2fearth-engine-apps%2fpreliminary-assessment-storm-kristin%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjoaogoncalves.cc%2fearth-engine-apps%2fpreliminary-assessment-storm-kristin%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjoaogoncalves.cc%2fearth-engine-apps%2fpreliminary-assessment-storm-kristin%2f&amp;title=Preliminary%20Assessment%20of%20Storm%20Kristin%20Impacts"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjoaogoncalves.cc%2fearth-engine-apps%2fpreliminary-assessment-storm-kristin%2f&amp;title=Preliminary%20Assessment%20of%20Storm%20Kristin%20Impacts"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Preliminary%20Assessment%20of%20Storm%20Kristin%20Impacts&amp;body=http%3a%2f%2fjoaogoncalves.cc%2fearth-engine-apps%2fpreliminary-assessment-storm-kristin%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="preliminary-assessment-of-storm-kristin-impacts">Preliminary Assessment of Storm Kristin Impacts</h2>
+
+<p><strong>Original title:</strong> Avaliação preliminar do impacto da Depressão Kristin<br />
+<strong>App:</strong> <a href="https://midyear-byway-378403.projects.earthengine.app/view/analise-preliminar-depressao-kristin-pt" target="_blank">Avaliação preliminar do impacto da Depressão Kristin</a></p>
+
+<p>This Google Earth Engine app was created for a preliminary assessment of the spatial impacts associated with Storm Kristin in Portugal. In Portuguese meteorological usage, &ldquo;depressão&rdquo; refers to the low-pressure storm system; the English title used here is therefore <strong>Preliminary Assessment of Storm Kristin Impacts</strong>.</p>
+
+<p>Storm Kristin was an extreme wind event that affected mainland Portugal in late January 2026. According to IPMA, the system underwent explosive cyclogenesis west of the Portuguese coast between 27 and 28 January 2026 and was named Storm Kristin by IPMA. The strongest impacts were associated with very intense wind, including a recovered IPMA observation of 156 km/h at Leiria aerodrome and a maximum instantaneous value of 175.9 km/h at the Monte Real air base.</p>
+
+<p>The app provides a rapid Earth observation interface for exploring the geographic footprint of this event. It is intended as a first-look tool: users can inspect affected areas, compare spatial patterns, and support field or institutional assessments with satellite-based context.</p>
+
+<h3 id="main-functionality">Main functionality</h3>
+
+<ul>
+<li>Provide a web map focused on the preliminary spatial assessment of Storm Kristin impacts.</li>
+<li>Support rapid visual inspection of areas affected by the event.</li>
+<li>Use Google Earth Engine as the processing and visualization environment.</li>
+<li>Make the analysis accessible through a public Earth Engine app URL.</li>
+<li>Complement official meteorological and civil protection information with spatial evidence from Earth observation data.</li>
+</ul>
+
+<h3 id="context">Context</h3>
+
+<p>Official Portuguese government communications described Storm Kristin as causing significant damage to several districts in central and western Portugal, leading to a disaster situation status and a coordinated national response. The Government also reported major disruption to electricity supply during the immediate aftermath, with around one million people initially without power before progressive restoration.</p>
+
+<p>The app should be interpreted as a preliminary remote-sensing product rather than a final damage census. Its value is in quickly translating event-scale satellite information into an interactive interface that can help prioritize inspection, compare affected areas, and communicate the spatial dimension of the storm.</p>
+
+<h3 id="related-resources">Related resources</h3>
+
+<ul>
+<li><a href="https://www.ipma.pt/pt/media/noticias/news.detail.jsp?f=Tempestade_kristin_portugal_continental.html&amp;y=2026" target="_blank">Storm Kristin technical note - IPMA</a></li>
+<li><a href="https://www.portugal.gov.pt/en/gc25/communication/news-item?i=storm-kristin-government-mobilises-national-response" target="_blank">Storm Kristin government response</a></li>
+<li><a href="https://developers.google.com/earth-engine/guides/apps" target="_blank">Google Earth Engine Apps documentation</a></li>
+</ul>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="label label-default" href="/tags/google-earth-engine/">Google Earth Engine</a>
+  
+  <a class="label label-default" href="/tags/storm-impact/">Storm Impact</a>
+  
+  <a class="label label-default" href="/tags/remote-sensing/">Remote Sensing</a>
+  
+  <a class="label label-default" href="/tags/portugal/">Portugal</a>
+  
+  <a class="label label-default" href="/tags/extreme-events/">Extreme Events</a>
+  
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/earth-engine-apps/burn-severity-mapper/">Burn Severity Mapper</a></li>
+        
+        <li><a href="/datasets/cortaderia-uav-occurrences/">Cortaderia selloana UAV occurrences (mainland Portugal, 2019–2020)</a></li>
+        
+        <li><a href="/datasets/severuspt/">SeverusPT</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "joaogoncalves" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+
+    
+
+    <p class="powered-by">
+
+      &copy; 2026 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//joaogoncalves.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+
