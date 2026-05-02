@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="A R package for running Object-based Image Analysis and optimizing image segmentation parameters.">
+  <meta name="description" content="R toolkit for raster-based connectivity analyses using Species Distribution Models as inputs.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://joaogoncalves.cc/r-packages/segoptim/">
+  <link rel="alternate" hreflang="en-us" href="http://joaogoncalves.cc/r-packages/sdmconnect/">
 
   
 
@@ -88,26 +88,26 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="http://joaogoncalves.cc/r-packages/segoptim/">
+  <link rel="canonical" href="http://joaogoncalves.cc/r-packages/sdmconnect/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="João Gonçalves">
-  <meta property="og:url" content="http://joaogoncalves.cc/r-packages/segoptim/">
-  <meta property="og:title" content="SegOptim | João Gonçalves">
-  <meta property="og:description" content="A R package for running Object-based Image Analysis and optimizing image segmentation parameters.">
+  <meta property="og:url" content="http://joaogoncalves.cc/r-packages/sdmconnect/">
+  <meta property="og:title" content="SDMconnect | João Gonçalves">
+  <meta property="og:description" content="R toolkit for raster-based connectivity analyses using Species Distribution Models as inputs.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2024-12-01T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-03-28T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2024-12-01T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2019-03-28T00:00:00&#43;00:00">
   
 
   
 
-  <title>SegOptim | João Gonçalves</title>
+  
+
+  <title>SDMconnect | João Gonçalves</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -285,7 +285,7 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">SegOptim</h1>
+    <h1 itemprop="name">SDMconnect</h1>
 
     
 
@@ -295,9 +295,9 @@
 
   <span class="article-date">
     
-    <meta content="2024-12-01 00:00:00 &#43;0000 GMT" itemprop="datePublished">
-    <time datetime="2024-12-01 00:00:00 &#43;0000 GMT" itemprop="dateModified">
-      Dec 1, 2024
+    <meta content="2019-03-28 00:00:00 &#43;0000 GMT" itemprop="datePublished">
+    <time datetime="2019-03-28 00:00:00 &#43;0000 GMT" itemprop="dateModified">
+      Mar 28, 2019
     </time>
   </span>
   <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
@@ -307,14 +307,14 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    3 min read
   </span>
   
 
   
   
   <span class="middot-divider"></span>
-  <a href="http://joaogoncalves.cc/r-packages/segoptim/#disqus_thread"></a>
+  <a href="http://joaogoncalves.cc/r-packages/sdmconnect/#disqus_thread"></a>
   
 
   
@@ -325,35 +325,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=SegOptim&amp;url=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsegoptim%2f"
+         href="https://twitter.com/intent/tweet?text=SDMconnect&amp;url=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsdmconnect%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsegoptim%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsdmconnect%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsegoptim%2f&amp;title=SegOptim"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsdmconnect%2f&amp;title=SDMconnect"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsegoptim%2f&amp;title=SegOptim"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsdmconnect%2f&amp;title=SDMconnect"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=SegOptim&amp;body=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsegoptim%2f">
+         href="mailto:?subject=SDMconnect&amp;body=http%3a%2f%2fjoaogoncalves.cc%2fr-packages%2fsdmconnect%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -369,49 +369,92 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h2 id="segoptim">SegOptim</h2>
+<h2 id="sdmconnect">SDMconnect</h2>
 
-<p>SegOptim is an R package for object-based image analysis (OBIA). It allows to run, compare and optimize multiple image segmentation algorithms in the context of supervised classification. It also allows to perform unsupervised classification with several different methods and compare them through internal clustering metrics.</p>
+<p>SDMconnect is an R package for raster-based connectivity analysis using Species Distribution Models (SDMs) as inputs. It is designed for workflows where habitat suitability maps are converted into spatial questions about landscape connectivity, cost-distance, and the potential isolation of suitable habitat under environmental change.</p>
 
-<p>For more details about installation and how to use the package go to the tutorial <a href="https://segoptim.bitbucket.io/docs/" target="_blank">here</a>. Check also the paper describing the package functionalities <a href="https://www.sciencedirect.com/science/article/pii/S0303243418303556" target="_blank">here</a>.</p>
+<p>The package requires either a resistance or permeability surface for cost-based path analysis. These surfaces represent how difficult or easy it is for organisms to move through the landscape matrix, allowing SDM outputs to be linked with functional connectivity metrics.</p>
 
-<h3 id="functionalities">Functionalities</h3>
+<h3 id="main-functionality">Main functionality</h3>
 
-<p>Currently the package offers several functionalities, namely:
-- Run different image segmentation algorithms;
-- Populate image segments with aggregate statistics (using pre- and/or user-defined functions);
-- Perform object-based supervised classification with several different methods;
-- Evaluate classification performance for single- or multi-class problems;
-- Optimize image segmentation parameters using Genetic Algorithms (GA) and other methods;
-- Compare different algorithms based on optimized solutions;
-- Perform unsupervised classification with several methods and compare the results using internal clustering criteria.</p>
+<ul>
+<li>Use SDM raster outputs as source and target layers for connectivity analysis.</li>
+<li>Analyse cost-based paths through resistance or permeability surfaces.</li>
+<li>Calculate k-shortest path distances between source cells and multiple target cells.</li>
+<li>Estimate average cost distance from source cells to target cells located in distinct nearby habitat clumps.</li>
+<li>Calculate overlap among shortest paths connecting source and target cells.</li>
+<li>Generate SDM change maps representing unsuitable, gained, lost, and stable suitable areas.</li>
+<li>Create source-target matrices for sampling route connections between habitat-change classes.</li>
+<li>Work with simulated test data to demonstrate and validate analysis workflows.</li>
+</ul>
 
-<h3 id="algorithms-supported">Algorithms Supported</h3>
+<h3 id="connectivity-workflow">Connectivity workflow</h3>
 
-<p><strong>Image segmentation algorithms:</strong>
-- ArcGIS Mean-shift
-- GRASS GIS Region Growing
-- Orfeo ToolBox (OTB) Large-scale Mean-shift
-- RSGISLib Shepherd&rsquo;s k-means
-- SAGA GIS Seeded Region Growing
-- TerraLib 5 Baatz-Schape Multi-resolution segmentation and Mean Region Growing</p>
+<p>SDMconnect implements the approach proposed by Goncalves et al. (2016) for assessing vulnerability to landscape fragmentation under environmental change. The workflow uses SDM predictions from two time periods to identify areas of habitat loss, habitat gain, stable suitable habitat, and stable unsuitable habitat. Connectivity analyses can then be run from source cells, such as projected habitat-loss areas, to target cells, such as nearby stable suitable habitat clumps.</p>
 
-<p><strong>Supervised classification algorithms:</strong>
-- Flexible Discriminant Analysis (FDA)
-- Generalized Boosted Model (GBM)
-- K-nearest neighbor classifier (KNN)
-- Random Forest (RF)
-- Support Vector Machines (SVM)</p>
+<p>This makes the package useful for studies that need to combine species distribution modelling with functional connectivity analysis, especially for low-dispersal species and fragmented landscapes where the configuration of suitable habitat can strongly affect persistence.</p>
 
-<p><strong>Unsupervised classification algorithms:</strong>
-- CLARA (Clustering LARge Applications)
-- Hard competitive learning algorithm
-- K-means
-- Neural gas algorithm</p>
+<h3 id="example-analyses">Example analyses</h3>
+
+<p>The README demonstrates a k-shortest path distance analysis using simulated SDM rasters and a resistance layer:</p>
+
+<pre><code class="language-r">library(SDMconnect)
+library(rasterVis)
+
+testData &lt;- generateTestData(nrow = 50, ncol = 50)
+
+sdm1 &lt;- testData$rstbin1
+sdm2 &lt;- testData$rstbin2
+costLayer &lt;- testData$costLayer
+
+kspDist &lt;- kShortestPathDistance(
+  sdm1,
+  sdm2,
+  costLayer = costLayer,
+  costLayerType = &quot;resistance&quot;,
+  k = 5,
+  fromCellsType = &quot;loss&quot;,
+  toCellsType = &quot;suitable&quot;,
+  clumpDirs = 4
+)
+</code></pre>
+
+<p>The package also includes functions for deriving SDM change maps, plotting source-target matrices, and estimating overlap among shortest paths:</p>
+
+<pre><code class="language-r">changeMap &lt;- sdmChangeMap(sdm1, sdm2)
+
+kspOv &lt;- kShortestPathOverlap(
+  sdm1,
+  sdm2,
+  costLayer = costLayer,
+  costLayerType = &quot;resistance&quot;,
+  k = 5,
+  fromCellsType = &quot;loss&quot;,
+  toCellsType = &quot;suitable&quot;,
+  clumpDirs = 4
+)
+</code></pre>
+
+<h3 id="installation">Installation</h3>
+
+<p>SDMconnect can be installed from GitHub with <code>devtools</code>:</p>
+
+<pre><code class="language-r">if (!(&quot;devtools&quot; %in% rownames(installed.packages()))) {
+  install.packages(&quot;devtools&quot;)
+}
+
+devtools::install_github(&quot;joaofgoncalves/SDMconnect&quot;)
+</code></pre>
+
+<p>Some functionality depends on Java through <code>rJava</code>, particularly the LORACS multiple-shortest path approach. For this workflow, R and Java architectures must match, and a suitable Java Development Kit installation is required.</p>
+
+<h3 id="reference">Reference</h3>
+
+<p>Goncalves, J., Honrado, J.P., Vicente, J.R., &amp; Civantos, E. (2016). A model-based framework for assessing the vulnerability of low dispersal vertebrates to landscape fragmentation under environmental change. <em>Ecological Complexity</em>, 28, 174-186. <a href="https://www.sciencedirect.com/science/article/pii/S1476945X16300289" target="_blank">ScienceDirect</a></p>
 
 <h3 id="repository">Repository</h3>
 
-<p><a href="https://github.com/joaofgoncalves/SegOptim" target="_blank">GitHub - joaofgoncalves/SegOptim</a></p>
+<p><a href="https://github.com/joaofgoncalves/SDMconnect" target="_blank">GitHub - joaofgoncalves/SDMconnect</a></p>
 
     </div>
 
@@ -422,9 +465,13 @@
   
   <a class="label label-default" href="/tags/r/">R</a>
   
-  <a class="label label-default" href="/tags/object-based-image-analysis/">Object-Based Image Analysis</a>
+  <a class="label label-default" href="/tags/species-distribution-models/">Species Distribution Models</a>
   
-  <a class="label label-default" href="/tags/machine-learning/">Machine Learning</a>
+  <a class="label label-default" href="/tags/connectivity/">Connectivity</a>
+  
+  <a class="label label-default" href="/tags/landscape-fragmentation/">Landscape Fragmentation</a>
+  
+  <a class="label label-default" href="/tags/geospatial/">Geospatial</a>
   
 </div>
 
@@ -432,20 +479,6 @@
 
 
     
-    
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Related</h3>
-      <ul>
-        
-        <li><a href="/r-packages/thermalraster/">ThermalRaster</a></li>
-        
-        <li><a href="/r-packages/rsegm/">rsegm</a></li>
-        
-        <li><a href="/r-packages/sdmconnect/">SDMconnect</a></li>
-        
-      </ul>
-    </div>
     
 
     

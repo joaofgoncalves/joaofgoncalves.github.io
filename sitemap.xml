@@ -473,6 +473,15 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/r-packages/sdmconnect/</loc>
+      <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/publication/2019_01_marcos_et_al_improving_detection_wildfire_disturbances_modis/</loc>
       <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     </url>
@@ -977,6 +986,16 @@
     
     <url>
     
+      <loc>http://joaogoncalves.cc/tags/connectivity/</loc>
+      <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://joaogoncalves.cc/datasets/</loc>
       <lastmod>2026-02-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -1049,6 +1068,16 @@
     
       <loc>http://joaogoncalves.cc/tags/land-cover/</loc>
       <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://joaogoncalves.cc/tags/landscape-fragmentation/</loc>
+      <lastmod>2019-03-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -41,5 +41,15 @@ For more details about installation and how to use the package go to the tutoria
 Key Features  Graph-based and hybrid segmentation algorithms: Includes Fast Felzenszwalb-Huttenlocher (FH) graph-based segmentation, Hybrid FH + region-level Mean Shift segmentation, Baatz-Schäpe multi-resolution, Fast Baatz-Schäpe multi-resolution, and SEEDS.</description>
     </item>
     
+    <item>
+      <title>SDMconnect</title>
+      <link>http://joaogoncalves.cc/r-packages/sdmconnect/</link>
+      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/r-packages/sdmconnect/</guid>
+      <description>SDMconnect SDMconnect is an R package for raster-based connectivity analysis using Species Distribution Models (SDMs) as inputs. It is designed for workflows where habitat suitability maps are converted into spatial questions about landscape connectivity, cost-distance, and the potential isolation of suitable habitat under environmental change.
+The package requires either a resistance or permeability surface for cost-based path analysis. These surfaces represent how difficult or easy it is for organisms to move through the landscape matrix, allowing SDM outputs to be linked with functional connectivity metrics.</description>
+    </item>
+    
   </channel>
 </rss>
