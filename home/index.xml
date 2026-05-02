@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/home/</link>
+    <description>Recent content in Homes on João Gonçalves</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2026</copyright>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://joaogoncalves.cc/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://joaogoncalves.cc/home/about/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/about/</guid>
+      <description>About me I am broad spectrum ecologist working on integrative approaches to investigate and monitor biodiversity patterns and spatiotemporal dynamics across multiple levels, scales and facets (composition, structure and function). For accomplishing this, I am looking for innovative ways to combine satellite remotely sensed Earth Observations, models and in situ data (among other sources). I am applying this combo to analyze ecosystem functions and linkages to ecological processes, species distributions and diversity, functional connectivity, wildifire disturbances and post-fire recovery as well as systems resilience.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>http://joaogoncalves.cc/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>http://joaogoncalves.cc/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://joaogoncalves.cc/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R-packages</title>
+      <link>http://joaogoncalves.cc/home/r-packages/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/r-packages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datasets</title>
+      <link>http://joaogoncalves.cc/home/datasets/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/datasets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>http://joaogoncalves.cc/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://joaogoncalves.cc/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

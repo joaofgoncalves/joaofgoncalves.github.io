@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/publication_types/6/</link>
+    <description>Recent content in 6 on João Gonçalves</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2026</copyright>
+    <lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://joaogoncalves.cc/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beyond INSPIRE: an ontology for biodiversity metadata records</title>
+      <link>http://joaogoncalves.cc/publication/2014_01_da-silva_et_al_beyond-inspire-an-ontology-for-biodiversity-metad/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/publication/2014_01_da-silva_et_al_beyond-inspire-an-ontology-for-biodiversity-metad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ecologia da paisagem e biodiversidade: da investigação à gestão e à conservação</title>
+      <link>http://joaogoncalves.cc/publication/2010_01_honrado_et_al_ecologia-da-paisagem-e-biodiversidade-da-investiga/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/publication/2010_01_honrado_et_al_ecologia-da-paisagem-e-biodiversidade-da-investiga/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

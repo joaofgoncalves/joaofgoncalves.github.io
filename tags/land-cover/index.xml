@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Land Cover on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/tags/land-cover/</link>
+    <description>Recent content in Land Cover on João Gonçalves</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2026</copyright>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://joaogoncalves.cc/tags/land-cover/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reclassified Global Land-Cover Plant Functional Type Dataset (1 km) — OneSTOP Task 5.1</title>
+      <link>http://joaogoncalves.cc/datasets/global-pft-reclassified-onestop/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/datasets/global-pft-reclassified-onestop/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

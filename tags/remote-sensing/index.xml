@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Remote Sensing on João Gonçalves</title>
+    <link>http://joaogoncalves.cc/tags/remote-sensing/</link>
+    <description>Recent content in Remote Sensing on João Gonçalves</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2026</copyright>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="http://joaogoncalves.cc/tags/remote-sensing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cortaderia selloana UAV occurrences (mainland Portugal, 2019–2020)</title>
+      <link>http://joaogoncalves.cc/datasets/cortaderia-uav-occurrences/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0100</pubDate>
+      
+      <guid>http://joaogoncalves.cc/datasets/cortaderia-uav-occurrences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SeverusPT</title>
+      <link>http://joaogoncalves.cc/datasets/severuspt/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaogoncalves.cc/datasets/severuspt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
